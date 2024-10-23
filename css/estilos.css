@@ -1,0 +1,45 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos Principales*/
+body{
+    max-width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    font-size: 25px;;
+}
+
+.menuPrincipal,
+.menuPrincipal > ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.menuPrincipal > ul > li{
+    display: flex;
+    align-items: center;;
+}
+
+.menuPrincipal > ul > li > a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+/*Sección 1*/
