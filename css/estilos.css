@@ -11,17 +11,23 @@ body{
 }
 
 /*Header*/
-.header{
-    display: flex;
-    justify-content: space-between;
-    
+.header{  
     padding: 20px 10px;
     background-color: black;
     color: white;
 }
 
+.headerContenedor{
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .logo{
-    font-size: 25px;;
+    font-size: 25px;
+    align-content: center;
 }
 
 .menuPrincipal,
@@ -42,4 +48,112 @@ body{
     margin-right: 20px;
 }
 
-/*Sección 1*/
+.menuPrincipal > ul > li > a:hover{
+    color: rgb(8, 231, 38);
+}
+
+.busqueda input{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.busqueda a{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/*Hero Section*/
+.heroSection{
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: "aside slider";
+    grid-template-columns: 20% 80%;
+}
+
+/*Sección aside home*/
+.aside{
+    background-color: rgb(233, 232, 232);
+    padding: 20px;
+}
+
+.aside a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: black;
+}
+
+.aside a:hover{
+    background-color: rgb(161, 161, 161);
+}
+
+/*Sección slider home*/
+.sectionSlider{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, rgba(26, 26, 26, 0.3), rgba(143, 138, 138, 0.3)), url("../img/HeroSlider1.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.slider{
+    text-align: center;
+    align-content: center;
+}
+.slider h2{
+    font-size: 42px;
+    padding: 20px 0;
+    color: white;
+    text-transform: uppercase;
+}
+.slider p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.slider a{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: solid 2px black;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.slider a:hover{
+    /* background-color: rgb(240, 240, 240); */
+    background-color: rgb(8, 231, 38);
+    color: rgb(17, 17, 17);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footerContenedor{
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer p > a{
+    text-decoration: none;
+    color: rgb(8, 231, 38);
+}
