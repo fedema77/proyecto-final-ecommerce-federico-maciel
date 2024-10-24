@@ -30,6 +30,11 @@ body{
     align-content: center;
 }
 
+.logo:hover{
+    color: rgb(8, 231, 38);
+    cursor: pointer;
+}
+
 .menuPrincipal,
 .menuPrincipal > ul{
     display: flex;
@@ -46,6 +51,7 @@ body{
     text-decoration: none;
     color: white;
     margin-right: 20px;
+    text-transform: uppercase;
 }
 
 .menuPrincipal > ul > li > a:hover{
@@ -229,7 +235,7 @@ body{
 }
 
 .categoriaItem:hover{
-    background-color: rgba(143, 138, 138, 0.3);
+    background-color: rgba(88, 87, 87, 0.3);
     border: 2px solid black;
 }
 
@@ -244,6 +250,7 @@ body{
     border-radius: 12px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0 10px;
 }
 
@@ -253,12 +260,36 @@ body{
 }
 
 .cardProducto h3{
-    font-size: 25px;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.cardProducto .productoDescripción{
     padding: 0px 10px;
 }
 
-.cardProducto p{
-    padding: 0px 10px;
+.cardProducto .precio{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.cardProducto p.precioDescuento{
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(8, 231, 38);
+    background-color: black;
+}
+
+.cardProducto p.precioRegular{
+    text-decoration: line-through;
+    color: tomato;
+    margin-right: 10px;
+    font-weight: 600;
 }
 
 .cardProducto a{
@@ -270,6 +301,15 @@ body{
     text-decoration: none;
     border-radius: 15px;
     text-align: center;
+    border: solid 1px black;
+}
+
+.cardProducto a:hover{
+    background-color: rgb(8, 231, 38);
+    color: rgb(17, 17, 17);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: solid 1px black;
 }
 
 /*Footer*/
