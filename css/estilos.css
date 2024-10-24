@@ -63,17 +63,17 @@ body{
     margin-left: 5px;
 }
 
-/*Hero Section*/
+/*Seccion Hero*/
 .heroSection{
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-areas: "aside slider";
+    grid-template-areas: "aside .sectionSlider";
     grid-template-columns: 20% 80%;
 }
 
-/*Sección aside home*/
+/*Seccion aside home*/
 .aside{
     background-color: rgb(233, 232, 232);
     padding: 20px;
@@ -90,7 +90,7 @@ body{
     background-color: rgb(161, 161, 161);
 }
 
-/*Sección slider home*/
+/*Seccion slider home*/
 .sectionSlider{
     display: flex;
     justify-content: center;
@@ -131,6 +131,145 @@ body{
     color: rgb(17, 17, 17);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+}
+
+/*Seccion Productos del día*/
+/*Header Productos*/
+.productosDelDia,
+.masVendidos{
+    width: 1400px;
+    padding: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-bottom: solid 1px rgb(233, 232, 232);
+}
+
+.productosDelDia header,
+.masVendidos header{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-areas: 
+        "H4 H4"
+        "H2 nav";
+}
+
+.productosDelDia h2,
+.masVendidos h2,
+.categorias h2{
+    grid-area: H2;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.productosDelDia h4,
+.masVendidos h4,
+.categorias h4{
+    border-left: solid 12px rgb(8, 231, 38);
+    padding-left: 10px;
+    align-self: center;
+    grid-area: H4;
+}
+
+.productosDelDia nav,
+.masVendidos nav,
+.categorias nav{
+    grid-area: nav;
+    text-align: right;
+}
+
+.productosDelDia nav a,
+.masVendidos nav a,
+.categorias nav a{
+    text-decoration: none;
+    background-color: rgb(233, 232, 232);
+    padding: 18px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.productosDelDia nav a:hover,
+.masVendidos nav a:hover,
+.categorias nav a:hover{
+    background-color: rgba(143, 138, 138, 0.3)
+}
+
+/*Seccion Categorias*/
+.categorias{
+    width: 1400px;
+    padding: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border-bottom: solid 1px rgb(233, 232, 232);
+}
+
+.categorias header{
+    grid-column: 1/8;
+    display: grid;
+    grid-template-areas: 
+        "H4 H4"
+        "H2 nav";
+}
+
+.categoriaItem{
+    border: 1px solid rgb(161, 161, 161);
+    background-color: rgb(233, 232, 232);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.categoriaItem:hover{
+    background-color: rgba(143, 138, 138, 0.3);
+    border: 2px solid black;
+}
+
+.categoriaItem img{
+    width: 40%;
+    margin-bottom: 10%;
+}
+
+/*Tarjeta Productos*/
+.cardProducto{
+    background-color: rgb(233, 232, 232);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.cardProducto img{
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+
+.cardProducto h3{
+    font-size: 25px;
+    padding: 0px 10px;
+}
+
+.cardProducto p{
+    padding: 0px 10px;
+}
+
+.cardProducto a{
+    padding: 10px 20px;
+    margin: 20px 10px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
 }
 
 /*Footer*/
