@@ -336,12 +336,15 @@ body{
     background-color: rgb(233, 232, 232);
     border-radius: 5px;
     padding: 30px;
-    
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .reseña .raiting{
     width: 75px;
+    align-self: center;
 }
 
 .reseña p.comentario{
