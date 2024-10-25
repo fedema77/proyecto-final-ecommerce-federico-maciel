@@ -163,7 +163,8 @@ body{
 
 .productosDelDia h2,
 .masVendidos h2,
-.categorias h2{
+.categorias h2,
+.reseñasSeccion h2{
     grid-area: H2;
     text-transform: uppercase;
     margin: 10px 0;
@@ -172,7 +173,8 @@ body{
 
 .productosDelDia h4,
 .masVendidos h4,
-.categorias h4{
+.categorias h4,
+.reseñasSeccion h4{
     border-left: solid 12px rgb(8, 231, 38);
     padding-left: 10px;
     align-self: center;
@@ -310,6 +312,68 @@ body{
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     border: solid 1px black;
+}
+
+/*RESEÑAS*/
+.reseñasSeccion{
+    width: 1400px;
+    padding: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 1px rgb(233, 232, 232);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 10% 1fr;
+    gap: 20px;
+}
+
+.reseñasSeccion header{
+    grid-column: 1 / 4;
+}
+
+.reseña{
+    border: 1px solid rgb(161, 161, 161);
+    background-color: rgb(233, 232, 232);
+    border-radius: 5px;
+    padding: 30px;
+    
+    text-align: center;
+}
+
+.reseña .raiting{
+    width: 75px;
+}
+
+.reseña p.comentario{
+    padding-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reseñaPersona{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.infoPersona {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre la imagen y el nombre */
+}
+
+.detallesPersona {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* alinea el nombre y ocupación a la izquierda */
+}
+
+.reseñaPersona img{
+    width: 50px;
+}
+
+.reseñaPersona .imgPersona{
+    border-radius: 50px;
 }
 
 /*Footer*/
