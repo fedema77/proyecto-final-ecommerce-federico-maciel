@@ -464,7 +464,7 @@ body{
 
 .flyerContenedorInfo .timer{
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: 70px;
 }
 
 
@@ -498,7 +498,7 @@ body{
 }
 
 .flyerContenedorInfo a{
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: rgb(8, 231, 38);
     color: black;
     border-radius: 15px;
@@ -506,6 +506,7 @@ body{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 3px;
+    font-size: 20px;
 }
 .flyerContenedorInfo a:hover{
     /* background-color: rgb(240, 240, 240); */
