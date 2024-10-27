@@ -20,7 +20,6 @@ body{
 .headerContenedor{
     display: flex;
     justify-content: space-between;
-    width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -69,9 +68,13 @@ body{
     margin-left: 5px;
 }
 
+/*Ancho del documento*/
+.sectionContenedor{
+    width: 75%;
+}
+
 /*Seccion Hero*/
 .heroSection{
-    width: 1400px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -145,7 +148,6 @@ body{
 /*Header Productos*/
 .productosDelDia,
 .masVendidos{
-    width: 1400px;
     padding: 75px;
     margin-left: auto;
     margin-right: auto;
@@ -212,7 +214,6 @@ body{
 
 /*Seccion Categorias*/
 .categorias{
-    width: 1400px;
     padding: 75px;
     margin-left: auto;
     margin-right: auto;
@@ -318,7 +319,6 @@ body{
 
 /*RESEÑAS*/
 .reseñasSeccion{
-    width: 1400px;
     padding: 75px;
     margin-left: auto;
     margin-right: auto;
@@ -383,7 +383,6 @@ body{
 
 /*SECCION FLYER*/
 .flyer{
-    width: 1400px;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
