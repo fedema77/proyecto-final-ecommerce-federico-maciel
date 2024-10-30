@@ -589,6 +589,22 @@ body{
     grid-row: 3 / 4;
 }
 
+/*Seccion Caracteristicas*/
+.caracteristicas{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 75px 0;
+}
+
+.caracteristicas .item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 
 /*Footer*/
 footer{
