@@ -39,6 +39,15 @@ body{
     cursor: pointer;
 }
 
+.menu-hamburguesa {
+    display: none;
+    width: 30px;
+}
+
+.menu-hamburguesa:hover svg rect {
+    fill: rgb(8, 231, 38);
+}
+
 .menuPrincipal,
 .menuPrincipal > ul{
     display: flex;
@@ -123,7 +132,7 @@ body{
     text-transform: uppercase;
 }
 .slider p{
-    font-size: 20px;
+    font-size: 1.25em;
     margin-bottom: 30px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -531,7 +540,7 @@ body{
     cursor: pointer;
 }
 
-/*SECCION ULTIMOS INGRESOS*/
+/*Sección Útlimos Ingresos*/
 .flyerNuevosProductos1,
 .flyerNuevosProductos2,
 .flyerNuevosProductos3,

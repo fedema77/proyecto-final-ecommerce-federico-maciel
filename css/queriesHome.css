@@ -38,7 +38,8 @@
     .masVendidos h2,
     .categorias h2,
     .reseñasSeccion h2,
-    .nuestrosProductos h2{
+    .nuestrosProductos h2,
+    .ultimosIngresos h2{
         font-size: 1.5em;
     }
 
@@ -79,6 +80,21 @@
     .caracteristicas{
         padding: 20px;
     }
+    .ultimosIngresos{
+        gap: 10px;
+    }
+    .infoTexto{
+        padding: 0;
+    }
+    .infoTexto h3{
+        font-size: 1.5rem;
+    }
+    .infoTexto p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+
     .caracteristicas img{
         height: 40%;
         position: relative;
@@ -110,5 +126,133 @@
     .footerPrincipal .col5{
         grid-column: span 2;
     }
+}
 
+/**Celulares**/
+@media (max-width: 425px){
+/*Sección Menu Principal*/
+    .logo{
+        font-size: 1.2em;
+    }
+    .menu-hamburguesa{
+        display: block;
+    }
+    .menuPrincipal{
+        display: none;
+    }
+    
+/*Sección Hero*/
+    .heroSection{
+        grid-template-columns: 35% 65%;
+    }
+    .sectionSlider{
+        background-image: url(../img/HeroSlider1.jpg);
+        background-position: center;
+    }
+    .slider h2{
+        font-size: 1.625em;
+    }
+    .slider p{
+        font-size: 0.8em;    
+    }
+    .slider a{
+        padding: 5px 10px;
+        font-size: 0.8em;
+        background-color: rgb(8, 231, 38);
+        color: black;
+    }
+/*Gap de secciones GRID*/
+    .productosDelDia,
+    .masVendidos, 
+    .nuestrosProductos, 
+    .ultimosIngresos{
+        gap: 10px
+    }
+
+/*Sección Categorias*/
+    .categorias{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 20px
+    }
+    .categorias header{
+        grid-column: 1 / 3;
+    }
+/*Sección Reseñas*/
+    .reseñasSeccion{
+        grid-template-columns: 1fr;
+    }
+    .reseñasSeccion header {
+        grid-column: span 1;
+    }
+/*Sección Flyer*/
+    .flyer{
+        flex-direction: column;
+    }
+    .flyerContenedorInfo {
+        padding: 0 0px 20px 0;
+        margin: 0;
+    }
+    .flyerContenedorInfo h4{font-size: 0.8em;}
+    .flyerContenedorInfo h2{font-size: 2.5em;line-height: 40px;}
+    .flyerContenedorInfo h5{font-size: 0.8em;}
+
+/*Sección Útlimos Ingresos*/
+    .flyerNuevosProductos1{
+        grid-column: 1 / 5;
+    }
+
+    .flyerNuevosProductos2{
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+    }
+
+    .flyerNuevosProductos3{
+        grid-column: 1 / 5;
+        grid-row: 5 / 6;
+    }
+
+    .flyerNuevosProductos4{
+        grid-column: 1 / 5;
+        grid-row: 6 / 7;
+    }
+
+/*Sección Catacteristicas*/
+    .caracteristicas{
+        display: block;
+    }
+    .caracteristicas .item{
+        margin-bottom: 20px;
+    }
+
+/*Footer*/
+    .footerPrincipal{
+        gap: 15px;
+    }
+    .footerPrincipal h3{
+        font-size: 1.5em;
+    }
+    .footerPrincipal p,a{
+        font-size: 1em !important;
+    }
+    .footerPrincipal .col{
+        gap: 5px;
+    }
+    .footerPrincipal .col3,
+    .footerPrincipal .col4,
+    .footerPrincipal .col5{
+        margin-top: 20px;
+    }
+    .footerPrincipal input[type=text]{
+        height: 35px;
+    }
+    .footerInferior{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footerInferior p,
+    .footerInferior a{
+        font-size: 0.8em;
+    }
 }
