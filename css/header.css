@@ -1,0 +1,95 @@
+/*Header*/
+.header{  
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+}
+
+.headerContenedor{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    font-size: 1.5em;
+    align-content: center;
+}
+
+.logo:hover{
+    color: rgb(8, 231, 38);
+    cursor: pointer;
+}
+
+.menu-hamburguesa {
+    display: none;
+    width: 30px;
+}
+
+.menu-hamburguesa:hover svg rect {
+    fill: rgb(8, 231, 38);
+}
+
+.menuPrincipal,
+.menuPrincipal > ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.menuPrincipal > ul > li{
+    display: flex;
+    align-items: center;;
+}
+
+.menuPrincipal > ul > li > a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.menuPrincipal > ul > li > a:hover{
+    color: rgb(8, 231, 38);
+}
+
+.busqueda{
+    display: flex;
+}
+
+.busqueda input{
+    padding: 10px;
+    font-size: 1em;
+}
+
+.busqueda .iconMenu{
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/**Tablet**/
+@media (max-width: 768px){
+    /*Header*/
+    .logo{
+        font-size: 1.2em;
+    }
+    .busqueda{
+        display: none;
+    }
+}
+
+/**Celulares**/
+@media (max-width: 425px){
+    /*Sección Menu Principal*/
+        .logo{
+            font-size: 1.2em;
+        }
+        .menu-hamburguesa{
+            display: block;
+        }
+        .menuPrincipal{
+            display: none;
+        }
+}

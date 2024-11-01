@@ -1,0 +1,142 @@
+/*Footer*/
+footer{
+    padding: 10px;
+    font-size: 0.8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerPrincipal{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.footerPrincipal h3{
+    font-size: 2em;
+}
+
+.footerPrincipal .footerText, .footerLink{
+    font-size: 1.5em;
+    margin-top: 10px;
+    display: block;
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+}
+
+.footerPrincipal a:hover{
+    color: rgb(8, 231, 38);
+}
+
+.footerPrincipal input[type=text]{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: rgb(230, 230, 230);
+    border: 1px solid white;
+    padding: 0px 10px;
+}
+
+.col{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rrss{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Footer Copywrite*/
+.footerInferior{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+    border-top: solid 1px rgb(87, 87, 87);
+}
+
+.footerInferior p > a{
+    text-decoration: none;
+    color: rgb(8, 231, 38);
+    display: inline;
+    font-size: 1em;
+}
+
+/**Tablet**/
+@media (max-width: 768px){
+    /*Footer*/
+    .footerPrincipal{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-rows: auto auto;         
+        gap: 40px;                             
+    }
+    .footerPrincipal input[type=text]{margin-top: 5px;}
+
+    .footerPrincipal .col1,
+    .footerPrincipal .col2{
+        grid-column: span 3;
+    }
+    .footerPrincipal .col3,
+    .footerPrincipal .col4,
+    .footerPrincipal .col5{
+        grid-column: span 2;
+    }
+}
+
+/**Celulares**/
+@media (max-width: 425px){
+    /*Footer*/
+    .footerPrincipal{
+        gap: 15px;
+    }
+    .footerPrincipal h3{
+        font-size: 1.5em;
+    }
+    .footerPrincipal p,a{
+        font-size: 1em !important;
+    }
+    .footerPrincipal .col{
+        gap: 5px;
+    }
+    .footerPrincipal .col3,
+    .footerPrincipal .col4,
+    .footerPrincipal .col5{
+        margin-top: 20px;
+    }
+    .footerPrincipal input[type=text]{
+        height: 35px;
+    }
+    .footerPrincipal .col3,
+    .footerPrincipal .col4{
+        grid-column: span 3;
+    }
+    .footerPrincipal .col5{
+        grid-column: span 6;
+    }
+    .footerPrincipal .footerDownloadAPP{
+        width: 60%;
+    }
+    .footerPrincipal .rrss{
+        margin-top: 20px;
+    }
+    .footerInferior{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footerInferior p,
+    .footerInferior a{
+        font-size: 0.8em;
+    }
+}

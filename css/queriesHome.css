@@ -37,13 +37,6 @@
         grid-template-columns: repeat(2,1fr);
     }
 
-/*Header*/
-    .logo{
-        font-size: 1.2em;
-    }
-    .busqueda{
-        display: none;
-    }
 /*Seccion aside home*/
     .aside{
         padding: 10px;
@@ -118,7 +111,6 @@
         margin: 0;
     }
 
-
     .caracteristicas img{
         height: 40%;
         position: relative;
@@ -131,39 +123,10 @@
         text-align: center;
     }
 
-/*Footer*/
-    .footerPrincipal{
-        padding: 20px;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr); 
-        grid-template-rows: auto auto;         
-        gap: 40px;                             
-    }
-    .footerPrincipal input[type=text]{margin-top: 5px;}
-
-    .footerPrincipal .col1,
-    .footerPrincipal .col2{
-        grid-column: span 3;
-    }
-    .footerPrincipal .col3,
-    .footerPrincipal .col4,
-    .footerPrincipal .col5{
-        grid-column: span 2;
-    }
 }
 
 /**Celulares**/
 @media (max-width: 425px){
-/*Sección Menu Principal*/
-    .logo{
-        font-size: 1.2em;
-    }
-    .menu-hamburguesa{
-        display: block;
-    }
-    .menuPrincipal{
-        display: none;
-    }
     
 /*Sección Hero*/
     .heroSection{
@@ -192,7 +155,6 @@
     .ultimosIngresos{
         gap: 10px
     }
-
 /*Sección Categorias*/
     .categorias{
         grid-template-columns: repeat(2, 1fr);
@@ -247,36 +209,5 @@
     }
     .caracteristicas .item{
         margin-bottom: 20px;
-    }
-
-/*Footer*/
-    .footerPrincipal{
-        gap: 15px;
-    }
-    .footerPrincipal h3{
-        font-size: 1.5em;
-    }
-    .footerPrincipal p,a{
-        font-size: 1em !important;
-    }
-    .footerPrincipal .col{
-        gap: 5px;
-    }
-    .footerPrincipal .col3,
-    .footerPrincipal .col4,
-    .footerPrincipal .col5{
-        margin-top: 20px;
-    }
-    .footerPrincipal input[type=text]{
-        height: 35px;
-    }
-    .footerInferior{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .footerInferior p,
-    .footerInferior a{
-        font-size: 0.8em;
     }
 }
