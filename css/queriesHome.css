@@ -1,3 +1,27 @@
+@media (min-width: 768px) and (max-width: 1700px) {
+    .categorias{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .categorias header{
+        grid-column: 1 / 4;
+    }
+    .categorias article:nth-last-child(1){
+        display: none;
+    }
+    .reseñasSeccion{
+        grid-template-columns: 1fr 1fr;
+    }
+    .reseñasSeccion header {
+        grid-column: span 2;
+    }
+    .reseñasSeccion{
+        grid-template-columns: 1fr 1fr;
+    }
+    .reseñasSeccion header {
+        grid-column: span 2;
+    }
+}
+
 /**Tablet**/
 @media (max-width: 768px){
 /*Tamaño del documento*/
