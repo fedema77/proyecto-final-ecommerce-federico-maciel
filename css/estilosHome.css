@@ -10,6 +10,10 @@ body{
     max-width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
+/*Ancho del documento*/
+.sectionContenedor{
+    width: 75%;
+}
 
 /*Header*/
 .header{  
@@ -26,7 +30,7 @@ body{
 }
 
 .logo{
-    font-size: 25px;
+    font-size: 1.5em;
     align-content: center;
 }
 
@@ -58,21 +62,21 @@ body{
     color: rgb(8, 231, 38);
 }
 
-.busqueda input{
-    padding: 10px;
-    font-size: 16px;
+.busqueda{
+    display: flex;
 }
 
-.busqueda a{
-    font-size: 25px;
+.busqueda input{
+    padding: 10px;
+    font-size: 1em;
+}
+
+.busqueda .iconMenu{
+    font-size: 1.5em;
     text-decoration: none;
     margin-left: 5px;
 }
 
-/*Ancho del documento*/
-.sectionContenedor{
-    width: 75%;
-}
 
 /*Seccion Hero*/
 .heroSection{
@@ -113,7 +117,7 @@ body{
     align-content: center;
 }
 .slider h2{
-    font-size: 42px;
+    font-size: 2.625em;
     padding: 20px 0;
     color: white;
     text-transform: uppercase;
@@ -149,7 +153,8 @@ body{
 /*Header Productos*/
 .productosDelDia,
 .masVendidos,
-.nuestrosProductos{
+.nuestrosProductos,
+.ultimosIngresos{
     padding: 75px 0;
     margin-left: auto;
     margin-right: auto;
@@ -161,7 +166,8 @@ body{
 
 .productosDelDia header,
 .masVendidos header,
-.nuestrosProductos header{
+.nuestrosProductos header,
+.ultimosIngresos header{
     grid-column: 1/5;
     display: flex;
     justify-content: space-between;
@@ -171,28 +177,29 @@ body{
 .masVendidos h2,
 .categorias h2,
 .reseñasSeccion h2,
-.nuestrosProductos h2{
-    grid-area: H2;
+.nuestrosProductos h2,
+.ultimosIngresos h2{
     text-transform: uppercase;
-    margin: 10px 0;
-    font-size: 30px;
+    margin-top: 10px;
+    font-size: 2em;
 }
 
 .productosDelDia h4,
 .masVendidos h4,
 .categorias h4,
 .reseñasSeccion h4,
-.nuestrosProductos h4{
+.nuestrosProductos h4,
+.ultimosIngresos h4{
     border-left: solid 12px rgb(8, 231, 38);
     padding-left: 10px;
     align-self: center;
-    grid-area: H4;
 }
 
 .productosDelDia nav,
 .masVendidos nav,
 .categorias nav,
-.nuestrosProductos nav{
+.nuestrosProductos nav,
+.ultimosIngresos nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -201,7 +208,8 @@ body{
 .productosDelDia nav a,
 .masVendidos nav a,
 .categorias nav a,
-.nuestrosProductos nav a{
+.nuestrosProductos nav a,
+.ultimosIngresos nav a{
     width: 53%;
     margin: 0 5px;
     text-decoration: none;
@@ -216,7 +224,8 @@ body{
 .productosDelDia nav a:hover,
 .masVendidos nav a:hover,
 .categorias nav a:hover,
-.nuestrosProductos nav a:hover{
+.nuestrosProductos nav a:hover,
+.ultimosIngresos nav a:hover{
     background-color: rgba(143, 138, 138, 0.3)
 }
 
@@ -248,7 +257,7 @@ body{
 
 .categoriaItem:hover {
     background-color: rgba(7, 7, 7, 0.3);
-    border: 2px solid black;
+    border: 1px solid black;
     color: white;
 }
 
@@ -259,7 +268,7 @@ body{
 
 .categoriaItem:hover{
     background-color: rgb(73, 73, 73);
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 /*Tarjeta Productos*/
@@ -277,7 +286,7 @@ body{
 }
 
 .cardProducto h3{
-    font-size: 20px;
+    font-size: 1.2em;
     padding: 10px 10px;
 }
 
@@ -297,7 +306,7 @@ body{
 .cardProducto p.precioDescuento{
     text-align: right;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.2em;
     color: rgb(8, 231, 38);
     background-color: black;
 }
@@ -329,7 +338,7 @@ body{
     border: solid 1px black;
 }
 
-/*RESEÑAS*/
+/*Sección Reseñas*/
 .reseñasSeccion{
     padding: 75px 0;
     margin-left: auto;
@@ -337,7 +346,7 @@ body{
     border-bottom: solid 1px rgb(233, 232, 232);
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 10% 1fr;
+    grid-template-rows: auto 1fr;
     gap: 20px;
 }
 
@@ -385,6 +394,10 @@ body{
     align-items: flex-start;
 }
 
+.detallesPersona p{
+    text-align: left;
+}
+
 .reseñaPersona img{
     width: 50px;
 }
@@ -393,7 +406,7 @@ body{
     border-radius: 50px;
 }
 
-/*SECCION FLYER*/
+/*Sección Flyer*/
 .flyer{
     padding: 20px;
     margin-left: auto;
@@ -442,7 +455,7 @@ body{
 .flyerContenedorInfo h4{
     border-left: solid 12px rgb(8, 231, 38);
     padding-left: 10px;
-    font-size: 30px;
+    font-size: 1.8em;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -450,7 +463,7 @@ body{
 .flyerContenedorInfo h2{
     text-transform: uppercase;
     margin: 10px 0;
-    font-size: 90px;
+    font-size: 5em;
     color: white;
     line-height: 75px;
 }
@@ -461,7 +474,7 @@ body{
 
 .flyerContenedorInfo h5{
     color: white;
-    font-size: 20px;
+    font-size: 1.2em;
     margin-bottom: 30px;
     font-weight: 100;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -472,12 +485,10 @@ body{
     margin-bottom: 70px;
 }
 
-
-
 .flyerContenedorInfo .timerCirculos{
     flex-direction: column;
-    width: 11%;
-    padding: 12px;
+    width: 14%;
+    padding: 21px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;
@@ -488,18 +499,17 @@ body{
 }
 
 .flyerContenedorInfo .timerCirculos p{
-    font-size: 0px;
     font-weight: 900;
 }
 
 .flyerContenedorInfo .timerCirculos p.timerNummero{
-    font-size: 40px;
+    font-size: 2em;
     margin-bottom: -10px;
+    font-weight: 900;
 }
 
-.flyerContenedorInfo .timerCirculos p {
-    font-size: 16px;
-    font-weight: 900;
+.flyerContenedorInfo .timerCirculos p.timerTexto{
+    font-size: 1em;
 }
 
 .flyerContenedorInfo a{
@@ -511,7 +521,7 @@ body{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 3px;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .flyerContenedorInfo a:hover{
     /* background-color: rgb(240, 240, 240); */
@@ -604,17 +614,17 @@ body{
 
 .caracteristicas .item{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    flex: 1;
 }
 
 
 /*Footer*/
 footer{
     padding: 10px;
-    font-size: 12px;
+    font-size: 0.8em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     color: white;
@@ -633,7 +643,7 @@ footer{
     font-size: 2em;
 }
 
-.footerPrincipal p, a{
+.footerPrincipal .footerText, .footerLink{
     font-size: 1.5em;
     margin-top: 10px;
     display: block;
@@ -659,10 +669,6 @@ footer{
     gap: 20px;
     display: flex;
     flex-direction: column;
-}
-
-.col5 img{
-    max-width: 85%;
 }
 
 .rrss{

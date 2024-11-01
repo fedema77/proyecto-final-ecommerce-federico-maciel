@@ -1,0 +1,114 @@
+/**Tablet**/
+@media (max-width: 768px){
+/*Tamaño del documento*/
+    .sectionContenedor{
+        width: 100%;
+    }
+/*Padding del docuemnto*/
+    .productosDelDia,
+    .masVendidos,
+    .nuestrosProductos,
+    .reseñasSeccion{
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+/*Header*/
+    .logo{
+        font-size: 1.2em;
+    }
+    .busqueda{
+        display: none;
+    }
+/*Seccion aside home*/
+    .aside{
+        padding: 10px;
+    }
+    .aside a{
+        font-size: 0.9em;
+    }
+/*Seccion Productos del día*/
+    .productosDelDia header,
+    .masVendidos header,
+    .nuestrosProductos header{
+        grid-column: 1/3;
+    }
+
+    .productosDelDia h2,
+    .masVendidos h2,
+    .categorias h2,
+    .reseñasSeccion h2,
+    .nuestrosProductos h2{
+        font-size: 1.5em;
+    }
+
+/*Seccion Categorias*/
+    .categorias{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        gap: 20px
+    }
+    .categorias header{
+        grid-column: 1 / 4;
+    }
+    .categoriaItem{margin: 0;}
+    .categorias article:nth-last-child(1){
+        display: none;
+    }
+
+/*Sección Reseñas*/
+    .reseñasSeccion header{
+        grid-column: 1/3;
+    }
+
+/*Sección Flyer*/
+    .flyer{margin: 20px 0;}
+    .flyerContenedorInfo{padding: 0% 2% 0px 10%;}
+    .flyerContenedorInfo h4{font-size: 1em;}
+    .flyerContenedorInfo h2{font-size: 3em;line-height: 40px;}
+    .flyerContenedorInfo h5{font-size: 1em;}
+    .flyerContenedorInfo .timer{margin-bottom: 35px;}
+    .flyerContenedorInfo .timerCirculos{padding: 18px; width: 19.35%;}
+    .flyerContenedorInfo .timerCirculos p.timerNummero{font-size: 1.5em;margin-bottom: 1px;}
+    .flyerContenedorInfo .timerCirculos p.timerTexto{font-size: 0.8em;}
+    .flyerContenedorInfo a{padding: 10px 20px;font-size: 1em;}
+
+
+/*Sección Últimos Ingresos y Caracteristicas*/
+    .ultimosIngresos,
+    .caracteristicas{
+        padding: 20px;
+    }
+    .caracteristicas img{
+        height: 40%;
+        position: relative;
+    }
+    .caracteristicas h3{
+        font-size: 1em;
+    }
+    .caracteristicas p{
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+/*Footer*/
+    .footerPrincipal{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-rows: auto auto;         
+        gap: 40px;                             
+    }
+    .footerPrincipal input[type=text]{margin-top: 5px;}
+
+    .footerPrincipal .col1,
+    .footerPrincipal .col2{
+        grid-column: span 3;
+    }
+    .footerPrincipal .col3,
+    .footerPrincipal .col4,
+    .footerPrincipal .col5{
+        grid-column: span 2;
+    }
+
+}
