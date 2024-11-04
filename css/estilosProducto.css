@@ -21,6 +21,8 @@
 
 /*Producto*/
 /*Imagenes*/
+.producto h2.tituloResponsive{display: none;}
+
 .producto{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,7 +131,7 @@
 }
 
 .accionesProducto .comprar {
-    background-color: #e53935;
+    background-color: rgb(7, 199, 33);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -138,21 +140,36 @@
     border-radius: 4px;
 }
 
+.accionesProducto .comprar:hover,
+.accionesProducto .selectorCantidad .decrementar:hover,
+.accionesProducto .selectorCantidad .incrementar:hover,
+.accionesProducto .wishlist:hover {
+    background-color: black;
+    color: rgb(8, 231, 38);
+}
+
 .accionesProducto .wishlist {
     background: none;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
 }
 
 .accionesProducto .wishlist svg {
-    stroke: black;
-    width: 18px;
-    height: 18px;
+    width: 50px; 
+    height: 50px;
+}
+
+.accionesProducto .wishlist svg:hover,
+.accionesProducto .wishlist svg path:hover {
+    fill: currentColor;
+    stroke: rgb(8, 231, 38);
+    stroke-width: 3;
 }
 
 .caracTienda{
