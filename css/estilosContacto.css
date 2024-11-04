@@ -1,3 +1,5 @@
+
+
 /*Breadcrumb*/
 .breadcrumb{
     padding: 75px 0;
@@ -47,12 +49,12 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .infoContacto .llamanos .textoLlamanos,
 .infoContacto .escribenos .textoEscribenos{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 2em;
 }
 
@@ -117,6 +119,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Montserrat", sans-serif;
 }
 
 button:hover {

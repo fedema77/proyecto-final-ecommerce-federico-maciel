@@ -86,7 +86,7 @@
 }
 
 .infoProducto .descripcionCorta, .caracteristicas{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: "Montserrat", sans-serif;
 }
 
 .infoProducto .descripcionCorta .caracteristicas ul{
@@ -183,7 +183,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: "Montserrat", sans-serif;
 }
 
 .caracTienda .item img{

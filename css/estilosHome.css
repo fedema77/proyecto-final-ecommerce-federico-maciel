@@ -46,7 +46,7 @@
     font-size: 1.25em;
     margin-bottom: 30px;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 2px;
 }
 
@@ -58,7 +58,7 @@
     border-radius: 15px;
     border: solid 2px black;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 3px;
 }
 .slider a:hover{
@@ -292,7 +292,7 @@
 
 .reseña p.comentario{
     padding-top: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .reseñaPersona{
@@ -377,7 +377,7 @@
     padding-left: 10px;
     font-size: 1.8em;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .flyerContenedorInfo h2{
@@ -397,7 +397,8 @@
     font-size: 1.2em;
     margin-bottom: 30px;
     font-weight: 100;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 .flyerContenedorInfo .timer{
@@ -439,7 +440,8 @@
     border-radius: 15px;
     border: solid 2px black;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     letter-spacing: 3px;
     font-size: 1.25em;
 }
