@@ -1,0 +1,40 @@
+/**Tablet**/
+@media (max-width: 768px){
+    /*Tamaño del documento*/
+    .sectionContenedor{
+        width: 100%;
+        padding: 20px;
+    }
+    .cuerpoContacto{
+        gap:20px;
+    }
+
+    .infoContacto, .formContacto {
+        padding: 20px;
+    }
+
+    .infoContacto .llamanos .imgTitulo,
+    .infoContacto .escribenos .imgTitulo {
+        gap: 10px;
+    }
+
+    .infoContacto .llamanos .textoLlamanos,
+    .infoContacto .escribenos .textoEscribenos {
+        line-height: 1em;
+    }
+    .infoContacto .textoEscribenos p:nth-child(1){
+        margin-bottom: 20px;
+    }
+}
+
+/**Celulares**/
+@media (max-width: 425px){
+    .cuerpoContacto{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .infoContacto,
+    .formContacto{
+        width: 100%;
+    }
+}
