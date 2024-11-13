@@ -1,0 +1,11 @@
+.nosotros{
+    padding-bottom: 75px;
+    margin: auto;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    gap: 40px;
+}
+
+.nosotros p{
+    padding-top: 30px;
+}
