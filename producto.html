@@ -37,7 +37,12 @@
                 </ul>
             </nav>
             <div class="busqueda">
-                <input type="text" name="buscar" id="buscar" placeholder="¿Que estas buscando?">
+                <div class="input-container">
+                    <input type="text" name="buscar" id="buscar" placeholder="¿Qué estás buscando?">
+                    <a href="./ofertas.html" class="send-button">
+                        <img src="./img/send_input.svg" alt="Enviar">
+                    </a>
+                </div>
                 <a class="iconMenu" href="">❤️</a>
                 <a class="iconMenu" href="">🛒</a>
             </div>    
@@ -170,7 +175,13 @@
                 <h3>Exclusivo</h3>
                 <h3>Suscribite</h3>
                 <p class="footerText">Obtén un 10% off en tu primer orden</p>
-                <input type="text" placeholder='Tu correo electronico'/>
+                <div class="footerInputContainer">
+                    <input type="text" placeholder="Tu correo electrónico">
+                    <button type="submit" class="send-button">
+                        <img src="./img/send_input.svg" alt="Enviar">
+                    </button>
+                </div>
+                <p id="successMessage" class="success-message" style="display: none;"></p>
             </div>
             <div class="col col2">
                 <h3>Soporte</h3>

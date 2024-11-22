@@ -32,15 +32,52 @@ footer{
     color: rgb(8, 231, 38);
 }
 
+
+.footerInputContainer {
+    position: relative;
+    width: 100%;
+}
+
 .footerPrincipal input[type=text]{
-    margin-top: 20px;
     width: 100%;
     height: 50px;
     background-color: black;
     color: rgb(230, 230, 230);
     border: 1px solid white;
-    padding: 0px 10px;
+    padding: 0 50px 0 10px; /* Espacio para el ícono */
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
+.footerInputContainer .send-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ícono del botón */
+.footerInputContainer .send-button img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(100%); /* Color blanco */
+}
+
+.footerInputContainer .send-button:hover img {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(79%) saturate(525%) hue-rotate(88deg) brightness(87%) contrast(92%);
+}
+
+
+
 
 .col{
     gap: 20px;
