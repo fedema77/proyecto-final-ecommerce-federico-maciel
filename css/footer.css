@@ -49,7 +49,7 @@ footer{
     border-radius: 5px;
     box-sizing: border-box;
 }
-.footerInputContainer .send-button {
+.footerInputContainer .enviar {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -66,13 +66,13 @@ footer{
 }
 
 /* Ícono del botón */
-.footerInputContainer .send-button img {
+.footerInputContainer .enviar img {
     width: 20px;
     height: 20px;
     filter: brightness(0) saturate(100%) invert(100%); /* Color blanco */
 }
 
-.footerInputContainer .send-button:hover img {
+.footerInputContainer .enviar:hover img {
     filter: brightness(0) saturate(100%) invert(36%) sepia(79%) saturate(525%) hue-rotate(88deg) brightness(87%) contrast(92%);
 }
 

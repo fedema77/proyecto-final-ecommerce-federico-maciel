@@ -107,12 +107,12 @@
                 <h3>Suscribite</h3>
                 <p class="footerText">Obtén un 10% off en tu primer orden</p>
                 <div class="footerInputContainer">
-                    <input type="text" placeholder="Tu correo electrónico">
-                    <button type="submit" class="send-button">
+                    <input type="text" id="emailInput" placeholder="Tu correo electrónico">
+                    <button type="button" class="enviar" id="enviar">
                         <img src="./img/send_input.svg" alt="Enviar">
                     </button>
                 </div>
-                <p id="successMessage" class="success-message" style="display: none;"></p>
+                <p id="envioSatisfactorio" class="mensajeSatisfactorio" style="display: none;"></p>
             </div>
             <div class="col col2">
                 <h3>Soporte</h3>
@@ -152,5 +152,6 @@
             <p>Desarrollado por <a href="https://fedemaciel.org" target="_blank">FM</a></p>
         </div>    
     </footer>
+    <script src="./js/validarMail.js"></script>
 </body>
 </html>
