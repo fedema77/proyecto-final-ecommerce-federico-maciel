@@ -110,6 +110,22 @@ textarea {
     height: 150px;
 }
 
+.form-group-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group .acceptance{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.acceptance{
+    text-align: left;
+}
+
 button {
     background-color: rgb(7, 199, 33);
     color: #fff;
