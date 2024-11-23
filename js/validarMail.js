@@ -9,18 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Evento de clic en el botón
     botonEnviar.addEventListener('click', () => {
         const email = emailInput.value.trim(); // Obtener y limpiar el valor del input
-
+        
         if (emailRegex.test(email)) {
             // Correo válido
-            msjSatisfactorio.style.display = 'block';
             msjSatisfactorio.textContent = 'Correo enviado correctamente';
-            msjSatisfactorio.style.color = 'rgb(8, 231, 38)'; // Color verde
+            msjSatisfactorio.classList.add('mostrar', 'correcto');
+            msjSatisfactorio.classList.remove('error');
             emailInput.value = ''; // Limpiar el input
         } else {
             // Correo inválido
-            msjSatisfactorio.style.display = 'block';
             msjSatisfactorio.textContent = 'Por favor, ingresa un correo válido';
-            msjSatisfactorio.style.color = 'tomato'; // Color rojo
+            msjSatisfactorio.classList.add('mostrar', 'error');
+            msjSatisfactorio.classList.remove('correcto');
         }
+        // Ocultar el mensaje después de 3 segundos
+        setTimeout(()=>{
+            msjSatisfactorio.classList.remove('mostrar');
+        }, 3000);
     });
 });
