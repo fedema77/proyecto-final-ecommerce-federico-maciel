@@ -20,7 +20,8 @@
 
     .infoContacto .llamanos .textoLlamanos,
     .infoContacto .escribenos .textoEscribenos {
-        line-height: 1em;
+        line-height: 1.2em;
+        font-size: 0.8em;
     }
     .infoContacto .textoEscribenos p:nth-child(1){
         margin-bottom: 20px;
@@ -31,7 +32,7 @@
 @media (max-width: 425px){
     .cuerpoContacto{
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 20px 20px 20px;
     }
     .infoContacto,
     .formContacto{
