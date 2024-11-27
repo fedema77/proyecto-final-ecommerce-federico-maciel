@@ -1,0 +1,47 @@
+.nosotros{
+    padding-bottom: 75px;
+    margin: auto;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    gap: 40px;
+}
+
+.nosotros p{
+    padding-top: 30px;
+}
+
+.nosotros img{
+    border-radius: 15px;
+
+}
+
+/*Seccion Caracteristicas*/
+.caracteristicas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    margin: auto;
+    padding: 75px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caracteristicas .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 30px;
+    border-radius: 15px;
+    transition: color 0.3s ease;
+}
+
+.caracteristicas .item:hover{
+    background-color: rgb(8, 231, 38);
+    transition: all 0.7s ease-in-out;
+}
+
+.caracteristicas h3{
+    font-size: 2em;
+}

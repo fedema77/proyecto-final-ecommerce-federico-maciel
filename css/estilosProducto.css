@@ -1,27 +1,12 @@
-/*Breadcrumb*/
-.breadcrumb,
+/*Producto*/
 .producto{
     padding: 75px 0;
     margin: auto;
 }
-.ruta{
-    display: flex;
-    gap: 20px;
-}
-
-.ruta a{
-    text-decoration: none;
-    color: rgba(143, 138, 138);
-}
-
-.ruta a:nth-last-child(1){
-    font-weight: 900;
-    color: black;
-}
-
-/*Producto*/
 /*Imagenes*/
-.producto h2.tituloResponsive{display: none;}
+.producto h2.tituloResponsive{
+    display: none;
+}
 
 .producto{
     display: grid;

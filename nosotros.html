@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/generales.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/estilosContacto.css">
-    <link rel="stylesheet" href="./css/queriesContacto.css">
+    <link rel="stylesheet" href="./css/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/estilosNosotros.css">
+    <link rel="stylesheet" href="./css/queriesNosotros.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <title>Contacto</title>
+    <title>Nosotros</title>
 </head>
 <body>
     <header id="header" class="header">
@@ -44,69 +45,49 @@
                 </div>
                 <a class="iconMenu" href="">❤️</a>
                 <a class="iconMenu" href="">🛒</a>
-            </div>    
+            </div> 
         </div>
     </header>
     <section class="sectionContenedor breadcrumb">
         <div class="ruta">
             <a href="">Home</a>
             <p>/</p>
-            <a href="">Contacto</a>
+            <a href="">Nosotros</a>
         </div>
     </section>
-    <section class="sectionContenedor cuerpoContacto">
-        <div class="infoContacto">
-            <div class="llamanos">
-                <div class="imgTitulo">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="50" height="50" rx="25" fill="#08E726"/>
-                        <path d="M23.1928 17.8L18.964 12.9188C18.4765 12.3563 17.5828 12.3588 17.0165 12.9263L13.539 16.41C12.504 17.4463 12.2078 18.985 12.8065 20.2188C16.3836 27.625 22.3566 33.6064 29.7578 37.1938C30.9903 37.7925 32.5278 37.4963 33.5628 36.46L37.0728 32.9438C37.6415 32.375 37.6428 31.4763 37.0753 30.9888L32.1753 26.7825C31.6628 26.3425 30.8665 26.4 30.3528 26.915L28.6478 28.6225C28.5605 28.714 28.4456 28.7743 28.3207 28.7942C28.1959 28.814 28.0679 28.7924 27.9565 28.7325C25.1696 27.1276 22.8578 24.8128 21.2565 22.0238C21.1966 21.9122 21.1749 21.784 21.1947 21.659C21.2146 21.5339 21.275 21.4187 21.3665 21.3313L23.0665 19.63C23.5815 19.1125 23.6378 18.3125 23.1928 17.7988V17.8Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <h3>Llamanos</h3>
-                </div>
-                <div class="textoLlamanos">
-                    <p>Estamos disponibles 24/7, todos los días</p>
-                    <p>Tel: +54 220 585 404 1122</p>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="escribenos">
-                <div class="imgTitulo">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="50" height="50" rx="25" fill="#08E726"/>
-                        <path d="M12.5 16.25L25 25L37.5 16.25M12.5 33.75H37.5V16.25H12.5V33.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                 
-                    <h3>Escribenos</h3>
-                </div>
-                <div class="textoEscribenos">
-                    <p>Llene nuestro formulario y nos pondremos en contacto con usted en 24 horas.</p>
-                    <p>Email: clientes@workwave.com</p>
-                    <p>Email: soporte@workwave.com</p>
-                </div>
-            </div>
+    <section class="sectionContenedor nosotros">
+        <div class="texto">
+            <h2>Nuestra Historia</h2>
+            <p>Desde nuestra fundación en Argentina, en 2015, WorkWave se ha convertido en un punto de referencia para freelancers y nómadas digitales alrededor del mundo. Nacimos con una visión clara: apoyar a quienes eligen una vida de independencia y flexibilidad, ofreciéndoles productos y herramientas diseñados especialmente para hacer su camino más fácil y eficiente.</p>
+            <p>Hoy en día, trabajamos con más de 10,000 vendedores y alrededor de 300 marcas que comparten nuestro compromiso de calidad. A través de nuestra plataforma, miles de profesionales encuentran todo lo necesario para llevar su oficina a cualquier parte, ya sea una mochila funcional, tecnología portátil o recursos para trabajar cómodamente desde cualquier rincón del mundo.</p>
+            <p>Con envíos a nivel global y más de un millón de productos en constante renovación, WorkWave está aquí para ayudarte a que nada te detenga. Nuestra comunidad de clientes en expansión es nuestro impulso para innovar y seguir ofreciendo una selección pensada para los desafíos y sueños de los trabajadores modernos.</p>
         </div>
-        <div class="formContacto">
-            <form action="https://formspree.io/f/xldejveq" method="POST">
-                <div class="form-group">
-                    <input type="text" placeholder="Nombre *" name="nombre" required>
-                    <input type="email" placeholder="Email *" name="email" required>
-                    <input type="tel" placeholder="Teléfono *" name="tel" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Mensaje" name="mensaje" required></textarea>
-                </div>
-                <div class="form-group-2">
-                    <div class="acceptance">
-                        <input type="checkbox" name="aceptación" id="aceptación" required>
-                        Acepto los términos y condiciones.
-                    </div>
-                    <button type="submit">Enviar Mensaje</button>
-                </div>
-                    <p class="disclaimer"><span>WorkWave Store te informa que los datos personales proporcionados serán utilizados para gestionar tu suscripción y enviarte boletines con información y ofertas relacionadas con nuestros productos o servicios. Puedes ejercer tus derechos de acceso, rectificación, limitación o supresión escribiéndonos. Consulta más detalles en nuestra política de privacidad.</span></p>
-            </form>
+        <div class="img">
+            <img src="./img/nosotros.jpg" alt="">
         </div>
     </section>
-
+    <section class="sectionContenedor caracteristicas">
+        <div class="item">
+            <img src="./img/Caract1Nosotros.svg" alt="Freelances felices">
+            <h3>27.5</h3>
+            <p>Freelances felices</p>
+        </div>
+        <div class="item">
+            <img src="./img/Caract2Nosotros.svg" alt="Ventas mensuales">
+            <h3>33k</h3>
+            <p>Ventas mensuales</p>
+        </div>
+        <div class="item">
+            <img src="./img/Caract3Nosotros.svg" alt="Usuarios fieles">
+            <h3>45.5k</h3>
+            <p>Usuarios fieles</p>
+        </div>
+        <div class="item">
+            <img src="./img/Caract4Nosotros.svg" alt="Articulos nuevos">
+            <h3>100k</h3>
+            <p>Articulos nuevos</p>
+        </div>
+    </section>
     <footer>
         <div class="sectionContenedor footerPrincipal">
             <div class="col col1">

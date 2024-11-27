@@ -32,15 +32,76 @@ footer{
     color: rgb(8, 231, 38);
 }
 
+
+.footerInputContainer {
+    position: relative;
+    width: 100%;
+}
+
 .footerPrincipal input[type=text]{
-    margin-top: 20px;
     width: 100%;
     height: 50px;
     background-color: black;
     color: rgb(230, 230, 230);
     border: 1px solid white;
-    padding: 0px 10px;
+    padding: 0 50px 0 10px; /* Espacio para el ícono */
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
+.footerInputContainer .enviar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensajeSatisfactorio {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mensajeSatisfactorio.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mensajeSatisfactorio.correcto {
+    color: rgb(8, 231, 38);
+}
+
+.mensajeSatisfactorio.error {
+    color: red;
+}
+
+
+
+/* Ícono del botón */
+.footerInputContainer .enviar img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(100%); /* Color blanco */
+}
+
+.footerInputContainer .enviar:hover img {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(79%) saturate(525%) hue-rotate(88deg) brightness(87%) contrast(92%);
+}
+
+
+
 
 .col{
     gap: 20px;

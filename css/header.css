@@ -57,6 +57,41 @@
 .busqueda{
     display: flex;
 }
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    padding-right: 40px; /* Espacio para el botón */
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.input-container .send-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-55%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+/* Estilo del ícono dentro del botón */
+.input-container .send-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Cambiar color del ícono al hacer hover */
+.input-container .send-button:hover img {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(79%) saturate(525%) hue-rotate(88deg) brightness(87%) contrast(92%);
+}
+
 
 .busqueda input{
     padding: 10px;
@@ -70,7 +105,8 @@
 }
 
 /**Tablet**/
-@media (max-width: 768px){
+@media (min-width: 0px) and (max-width: 1100px) {
+/* @media (max-width: 768px){ */
     /*Header*/
     .logo{
         font-size: 1.2em;
@@ -81,7 +117,7 @@
 }
 
 /**Celulares**/
-@media (max-width: 425px){
+@media (max-width: 620px){
     /*Sección Menu Principal*/
         .logo{
             font-size: 1.2em;
