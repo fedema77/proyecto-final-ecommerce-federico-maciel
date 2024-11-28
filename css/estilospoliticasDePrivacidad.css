@@ -1,0 +1,40 @@
+.sectionTexto{
+    padding: 0 0 75px 0;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    padding-right: 40em;
+}
+
+.titulos{
+    padding: 1.5em 0;
+}
+
+.sectionTexto ul{
+    margin-left: 2em;
+}
+
+/**Tablet**/
+@media (max-width: 768px){
+    .breadcrumb{
+        padding: 25px 0;
+        margin: auto;
+    }
+    .sectionTexto{
+        padding-right: 0em;
+        padding: 0 0 25px 0;
+    }
+}
+
+/**Celulares**/
+@media (max-width: 760px){
+    .sectionTexto{
+        padding-right: 0em;
+    }
+    .titulos{
+        padding: .5em 0;
+    }
+    
+    .sectionTexto ul{
+        margin-left: 1em;
+    }
+}
