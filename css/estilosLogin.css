@@ -1,0 +1,131 @@
+.loginContenedor{
+    padding: 75px;
+    margin: auto;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    gap: 40px;
+}
+
+.loginContenedor .img{
+    width: 100%;
+}
+
+.login{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #cdc8c8;
+    text-align: center;
+    width: 100%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Input styling */
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(8, 231, 38);
+}
+
+/* Primary button styling */
+.btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgb(8, 231, 38);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: rgb(9, 155, 28);
+    color: white;
+}
+
+/* Google button styling */
+.btn-google {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-google:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer text */
+.footer-text {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 1rem;
+}
+
+.footer-text a {
+    color: rgb(9, 155, 28);
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/**Tablet**/
+@media (max-width: 768px){
+    .loginContenedor{
+        padding: 25px;
+        flex-direction: column;
+    }
+    .loginContenedor .img{
+        display: none;
+    }
+    .login{
+        max-width: 100%;
+    }
+}
+
+/**Celulares**/
+@media (max-width: 425px){
+    .sectionContenedor {
+        width: 90%;
+    }
+    .loginContenedor{
+        padding: 25px 0;
+    }
+}

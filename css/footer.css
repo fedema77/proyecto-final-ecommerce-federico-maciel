@@ -72,9 +72,11 @@ footer{
     font-size: 1rem;
     margin-top: 10px;
     text-align: center;
+    display: none;
 }
 
 .mensajeSatisfactorio.mostrar {
+    display: block;
     opacity: 1;
     visibility: visible;
 }
@@ -152,6 +154,10 @@ footer{
     .footerPrincipal .col4,
     .footerPrincipal .col5{
         grid-column: span 2;
+    }
+    .mensajeSatisfactorio{
+        margin: 0px;
+        
     }
 }
 

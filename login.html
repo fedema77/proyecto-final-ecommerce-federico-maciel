@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/generales.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/estilosLogin.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Inicio Sesion</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="sectionContenedor headerContenedor">
+            <div class="logo">
+                <h1 class="logo">WorkWave Store</h1>
+            </div>
+            <div class="menu-hamburguesa">
+                <svg width="20" height="20" viewBox="0 0 100 80" fill="currentColor">
+                    <rect width="100" height="15"></rect>
+                    <rect y="30" width="100" height="15"></rect>
+                    <rect y="60" width="100" height="15"></rect>
+                </svg>
+            </div>
+            <nav id="menuPrincipal" class="menuPrincipal">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./producto.html">Productos</a></li>
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="busqueda">
+                <div class="input-container">
+                    <input type="text" name="buscar" id="buscar" placeholder="¿Qué estás buscando?">
+                    <a href="./ofertas.html" class="send-button">
+                        <img src="./img/send_input.svg" alt="Enviar">
+                    </a>
+                </div>
+                <a class="iconMenu" href="">❤️</a>
+                <a class="iconMenu" href="">🛒</a>
+            </div> 
+        </div>
+    </header>
+    <section class="sectionContenedor loginContenedor">
+        <div class="img">
+            <img src="./img/login.svg" alt="">
+        </div>
+        <div class="contenedorForm login">
+            <h2>Crea una cuenta</h2>
+            <p>Completa tus datos</p>
+        <form action="#" class="form">
+            <input type="text" placeholder="nombre" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn-primary">Crear una cuenta</button>
+            <button type="button" class="btn-google">
+                <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google logo"> Inicia sesion con Google
+            </button>
+        </form>
+        <p class="footer-text">
+            ¿Ya tienes una cuenta? <a href="#">Iniciar Sesion</a>
+        </p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="sectionContenedor footerPrincipal">
+            <div class="col col1">
+                <h3>Exclusivo</h3>
+                <h3>Suscribite</h3>
+                <p class="footerText">Obtén un 10% off en tu primer orden</p>
+                <div class="footerInputContainer">
+                    <input type="text" id="emailInput" placeholder="Tu correo electrónico">
+                    <button type="button" class="enviar" id="enviar">
+                        <img src="./img/send_input.svg" alt="Enviar">
+                    </button>
+                </div>
+                <p id="envioSatisfactorio" class="mensajeSatisfactorio">Mensaje</p>
+            </div>
+            <div class="col col2">
+                <h3>Soporte</h3>
+                <p class="footerText">Calle Falsa 123</p>
+                <a class="footerLink" href="mailto:contacto@workwave.com" target="blank">contacto@workwave.com</a>
+                <p class="footerText">+54 221 7765 3445</p>
+            </div>
+            <div class="col col3">
+                <h3>Cuenta</h3>
+                <a class="footerLink" href="./miCuenta.html">Mi cuenta</a>
+                <a class="footerLink" href="./login.html">Iniciar Sesion / Registro</a>
+                <a class="footerLink" href="./carrito.html"> Carrito</a>
+                <a class="footerLink" href="./whislist.html">Lista de Deseos</a>
+                <a class="footerLink" href="./producto.html">Tienda</a>
+            </div>
+            <div class="col col4">
+                <h3>Enlaces rápidos</h3>
+                <a class="footerLink" href="./politicasDePrivacidad.html">Políticas de Privacidad</a>
+                <a class="footerLink" href="./terminosDeUso.html">Términos de uso</a>
+                <a class="footerLink" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                <a class="footerLink" href="./contacto.html">Contacto</a>
+            </div>
+            <div class="col col5">
+                <h3>Descarga la App</h3>
+                <p class="footerText">Ahorra 10% solo para nuevos usuarios</p>
+                <img class="footerDownloadAPP" src="./img/App.svg" alt="">
+                <div class="rrss">
+                    <a class="footerLink" href=""><img src="./img/Icon-Facebook.svg" alt=""></a>
+                    <a class="footerLink" href=""><img src="./img/Icon-Twitter.svg" alt=""></a>
+                    <a class="footerLink" href=""><img src="./img/icon-instagram.svg" alt=""></a>
+                    <a class="footerLink" href=""><img src="./img/Icon-Linkedin.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="sectionContenedor footerInferior">
+            <p>&copy; 2024 WorkWave Store. Todos los derechos reservados.</p>
+            <p>Desarrollado por <a href="https://fedemaciel.org" target="_blank">FM</a></p>
+        </div>    
+    </footer>
+    <script src="./js/validarMail.js"></script>
+</body>
+</html>
