@@ -102,6 +102,18 @@
     font-size: 1.5em;
     text-decoration: none;
     margin-left: 5px;
+    color: white;
+    fill: currentColor; /* SVG hereda el color de su contenedor */
+    width: 60px;
+}
+
+.iconMenu .carritoSVG{
+    color: black;
+}
+
+.iconMenu:hover,
+.carritoSVG:hover{
+    color: rgb(8, 231, 38);
 }
 
 /**Tablet**/
