@@ -240,7 +240,6 @@
 
 .cardProducto a{
     padding: 10px 20px;
-    margin: 20px 10px;
     background-color: black;
     color: white;
     display: inline-block;
@@ -490,6 +489,12 @@
     font-size: 0.9rem;
 }
 
+.botones{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
 .btnCarrito {
     color: white;
     text-decoration: none;
@@ -497,13 +502,42 @@
     border: 1px solid white;
     padding: 5px 10px;
     border-radius: 4px;
-    margin-top: 10px;
     display: inline-block;
+    width: 100%;
 }
 
 .btnCarrito:hover {
     background-color: rgb(8, 231, 38);
     color: black;
+}
+
+.cardProducto .wishlist:hover {
+    background-color: black;
+    color: rgb(8, 231, 38);
+}
+
+.cardProducto .wishlist {
+    background: none;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.cardProducto .wishlist svg {
+    width: 50px; 
+    height: 50px;
+}
+
+.cardProducto .wishlist svg:hover,
+.cardProducto .wishlist svg path:hover {
+    fill: currentColor;
+    stroke: rgb(8, 231, 38);
+    stroke-width: 3;
 }
 
 .flyerNuevosProductos1{
