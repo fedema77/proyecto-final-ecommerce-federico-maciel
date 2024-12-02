@@ -1,0 +1,190 @@
+.principal{
+    padding: 0 0 75px 0;
+    margin: auto;
+    width: 75%;
+    display: flex;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contenedorItemsCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itemsCarrito{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+}
+
+.itemsCarrito .selectorCantidad {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 1.2em;
+}
+
+.itemsCarrito .selectorCantidad button {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    width: 30px;
+}
+
+.itemsCarrito .cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.itemsCarrito .eliminar {
+    background-color: transparent;
+    color: rgb(8, 231, 38);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.25em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.itemsCarrito .descripcionEliminar .eliminar:hover,
+.itemsCarrito .selectorCantidad .decrementar:hover,
+.itemsCarrito .selectorCantidad .incrementar:hover{
+    background-color: black;
+    color: rgb(8, 231, 38);
+}
+
+.itemsCarrito .precio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.itemsCarrito p.precioDescuento{
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.itemsCarrito p.precioRegular{
+    text-decoration: line-through;
+    color: tomato;
+    font-weight: 600;
+}
+
+
+
+.contenedorTotales{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.contenedorTotales .contenedorDescuento p{
+    text-align: center;
+}
+
+.contenedorTotales .contenedorDescuento{
+    padding: 25px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedorDescuento input[type=text]{
+    width: 70%;
+    height: 30px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border-color: rgb(8, 231, 38);
+}
+
+.contenedorDescuento button{
+    width: 28%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contenedorDescuento button:hover{
+    background-color: rgb(7, 199, 33);
+    border-color: black;
+}
+
+.contenedorTotales .totales{
+    padding: 25px;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid grey;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.total p{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.totales .subtotal,
+.totales .total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.totales .botones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botones .continuarComprando,
+.botones .checkout{
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.botones .continuarComprando:hover{
+    background-color: black;
+    color: white;
+}
+
+.botones .checkout{
+    background: rgb(7, 199, 33);
+}
+
+.botones .checkout:hover{
+    background: black;
+    color: rgb(7, 199, 33);
+}

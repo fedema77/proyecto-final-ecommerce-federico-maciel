@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/generales.css">
+    <link rel="stylesheet" href="./css/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/estilosCarrito.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="sectionContenedor headerContenedor">
+            <div class="logo">
+                <h1 class="logo">WorkWave Store</h1>
+            </div>
+            <div class="menu-hamburguesa">
+                <svg width="20" height="20" viewBox="0 0 100 80" fill="currentColor">
+                    <rect width="100" height="15"></rect>
+                    <rect y="30" width="100" height="15"></rect>
+                    <rect y="60" width="100" height="15"></rect>
+                </svg>
+            </div>
+            <nav id="menuPrincipal" class="menuPrincipal">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./producto.html">Productos</a></li>
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="busqueda">
+                <div class="input-container">
+                    <input type="text" name="buscar" id="buscar" placeholder="¿Qué estás buscando?">
+                    <a href="./ofertas.html" class="send-button">
+                        <img src="./img/send_input.svg" alt="Enviar">
+                    </a>
+                </div>
+                <a class="iconMenu" href="./wishlist.html">
+                    <svg fill="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </a>
+                <a class="iconMenu" href="./carrito.html">
+                    <svg class="carritoSVG" fill="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </a>
+            </div> 
+        </div>
+    </header>
+    <section class="sectionContenedor breadcrumb">
+        <div class="ruta">
+            <a href="">Home</a>
+            <p>/</p>
+            <a href="">Carrito</a>
+        </div>
+    </section>
+    <section class="principal">
+        <div class="contenedorItemsCarrito">
+            <div class="itemsCarrito">
+                <img class="imgThumbnail1" src="./img/imgProducto1.svg" alt="" class="img">
+                <div class="descripcionEliminar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consequatur!</p>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+                <div class="selectorCantidad">
+                    <button class="decrementar">−</button>
+                    <span class="cantidad">1</span>
+                    <button class="incrementar">+</button>
+                </div>
+                <div class="precio">
+                    <p class="precioRegular">$1499</p>
+                    <p class="precioDescuento">$999</p>
+                </div>
+            </div>
+            <div class="itemsCarrito">
+                <img class="imgThumbnail1" src="./img/imgProducto1.svg" alt="" class="img">
+                <div class="descripcionEliminar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consequatur!</p>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+                <div class="selectorCantidad">
+                    <button class="decrementar">−</button>
+                    <span class="cantidad">1</span>
+                    <button class="incrementar">+</button>
+                </div>
+                <div class="precio">
+                    <p class="precioRegular">$1499</p>
+                    <p class="precioDescuento">$999</p>
+                </div>
+            </div>
+            <div class="itemsCarrito">
+                <img class="imgThumbnail1" src="./img/imgProducto1.svg" alt="" class="img">
+                <div class="descripcionEliminar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consequatur!</p>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+                <div class="selectorCantidad">
+                    <button class="decrementar">−</button>
+                    <span class="cantidad">1</span>
+                    <button class="incrementar">+</button>
+                </div>
+                <div class="precio">
+                    <p class="precioRegular">$1499</p>
+                    <p class="precioDescuento">$999</p>
+                </div>
+            </div>
+            <div class="itemsCarrito">
+                <img class="imgThumbnail1" src="./img/imgProducto1.svg" alt="" class="img">
+                <div class="descripcionEliminar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consequatur!</p>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+                <div class="selectorCantidad">
+                    <button class="decrementar">−</button>
+                    <span class="cantidad">1</span>
+                    <button class="incrementar">+</button>
+                </div>
+                <div class="precio">
+                    <p class="precioRegular">$1499</p>
+                    <p class="precioDescuento">$999</p>
+                </div>
+            </div>
+            <div class="itemsCarrito">
+                <img class="imgThumbnail1" src="./img/imgProducto1.svg" alt="" class="img">
+                <div class="descripcionEliminar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consequatur!</p>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+                <div class="selectorCantidad">
+                    <button class="decrementar">−</button>
+                    <span class="cantidad">1</span>
+                    <button class="incrementar">+</button>
+                </div>
+                <div class="precio">
+                    <p class="precioRegular">$1499</p>
+                    <p class="precioDescuento">$999</p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorTotales">
+            <div class="contenedorDescuento">
+                <p>¿Tenés un código de descuento?</p>
+                <div class="inputDescuento">
+                    <input type="text" id="emailInput" placeholder="CUPÓN">
+                    <button type="button" class="enviar" id="enviar">
+                       APLICAR
+                    </button>
+                </div>
+            </div>
+            <div class="totales">
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p class="precioSubtotal">$999</p>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p class="precioTotal">$999</p>
+                </div>
+                <div class="botones">
+                    <button class="checkout">FINALIZAR COMPRA</button>
+                    <button class="continuarComprando">CONTINUAR COMPRANDO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="sectionContenedor footerPrincipal">
+            <div class="col col1">
+                <h3>Exclusivo</h3>
+                <h3>Suscribite</h3>
+                <p class="footerText">Obtén un 10% off en tu primer orden</p>
+                <div class="footerInputContainer">
+                    <input type="text" id="emailInput" placeholder="Tu correo electrónico">
+                    <button type="button" class="enviar" id="enviar">
+                        <img src="./img/send_input.svg" alt="Enviar">
+                    </button>
+                </div>
+                <p id="envioSatisfactorio" class="mensajeSatisfactorio">Mensaje</p>
+            </div>
+            <div class="col col2">
+                <h3>Soporte</h3>
+                <p class="footerText">Calle Falsa 123</p>
+                <a class="footerLink" href="mailto:contacto@workwave.com" target="blank">contacto@workwave.com</a>
+                <p class="footerText">+54 221 7765 3445</p>
+            </div>
+            <div class="col col3">
+                <h3>Cuenta</h3>
+                <a class="footerLink" href="./login.html">Mi cuenta</a>
+                <a class="footerLink" href="./login.html">Iniciar Sesion / Registro</a>
+                <a class="footerLink" href="./carrito.html"> Carrito</a>
+                <a class="footerLink" href="./whislist.html">Lista de Deseos</a>
+                <a class="footerLink" href="./producto.html">Tienda</a>
+            </div>
+            <div class="col col4">
+                <h3>Enlaces rápidos</h3>
+                <a class="footerLink" href="./politicasDePrivacidad.html">Políticas de Privacidad</a>
+                <a class="footerLink" href="./terminosDeUso.html">Términos de uso</a>
+                <a class="footerLink" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                <a class="footerLink" href="./contacto.html">Contacto</a>
+            </div>
+            <div class="col col5">
+                <h3>Descarga la App</h3>
+                <p class="footerText">Ahorra 10% solo para nuevos usuarios</p>
+                <img class="footerDownloadAPP" src="./img/App.svg" alt="">
+                <div class="rrss">
+                    <a class="footerLink" href=""><img src="./img/Icon-Facebook.svg" alt=""></a>
+                    <a class="footerLink" href=""><img src="./img/Icon-Twitter.svg" alt=""></a>
+                    <a class="footerLink" href=""><img src="./img/icon-instagram.svg" alt=""></a>
+                    <a class="footerLink" href=""><img src="./img/Icon-Linkedin.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="sectionContenedor footerInferior">
+            <p>&copy; 2024 WorkWave Store. Todos los derechos reservados.</p>
+            <p>Desarrollado por <a href="https://fedemaciel.org" target="_blank">FM</a></p>
+        </div>    
+    </footer>
+    <script src="./js/validarMail.js"></script>
+</body>
+</html>
