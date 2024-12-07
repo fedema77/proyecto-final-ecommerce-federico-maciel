@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <title>Contacto</title>
 </head>
-<body>
+<body class="paginaContacto">
     <header id="header" class="header">
         <div class="sectionContenedor headerContenedor">
             <div class="logo">
@@ -92,23 +92,23 @@
                 </div>
             </div>
         </div>
-        <div class="formContacto">
-            <p style="position:block;">Texto</p>
+        <div class="formContacto" id="formContacto">
+            <div class="alerta" id="alertaMensaje"></div>
             <form action="https://formspree.io/f/xldejveq" method="POST">
                 <div class="form-group">
-                    <input type="text" placeholder="Nombre *" name="nombre" required>
-                    <input type="email" placeholder="Email *" name="email" required>
-                    <input type="tel" placeholder="Teléfono *" name="tel" required>
+                    <input id="formInputNombre" type="text" placeholder="Nombre *" name="nombre" >
+                    <input id="formInputEmail" type="email" placeholder="Email *" name="email" >
+                    <input id="formInputTel" type="tel" placeholder="Teléfono *" name="tel" >
                 </div>
                 <div class="form-group">
-                    <textarea placeholder="Mensaje" name="mensaje" required></textarea>
+                    <textarea id="formInputText" placeholder="Mensaje" name="mensaje" ></textarea>
                 </div>
                 <div class="form-group-2">
                     <div class="acceptance">
-                        <input type="checkbox" name="aceptación" id="aceptación" required>
+                        <input id="formCheckAceptacion" type="checkbox" name="aceptación" id="aceptación" >
                         Acepto los términos y condiciones.
                     </div>
-                    <button type="submit">Enviar Mensaje</button>
+                    <button id="enviarForm" type="submit">Enviar Mensaje</button>
                 </div>
                     <p class="disclaimer"><span>WorkWave Store te informa que los datos personales proporcionados serán utilizados para gestionar tu suscripción y enviarte boletines con información y ofertas relacionadas con nuestros productos o servicios. Puedes ejercer tus derechos de acceso, rectificación, limitación o supresión escribiéndonos. Consulta más detalles en nuestra política de privacidad.</span></p>
             </form>

@@ -80,6 +80,37 @@ form{
     text-align: end;
 }
 
+.alerta {
+    background-color: #ffe6e6; /* Fondo rosa claro */
+    color: #b30000; /* Color del texto */
+    border: 1px solid #ffcccc; /* Borde rojo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado superior */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    font-size: 14px; /* Tamaño del texto */
+    display: none; /* Ocultar inicialmente */
+}
+
+.alerta ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Quita los puntos de lista */
+}
+
+.alerta li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.alerta li::before {
+    content: "❌"; /* Ícono de error */
+    margin-right: 10px;
+    color: #b30000; /* Mismo color que el texto */
+    font-size: 16px;
+}
+
 .form-group {
     display: flex;
     gap: 10px;
