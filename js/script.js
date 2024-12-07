@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Validar mail en el footer
     const botonEnviar = document.getElementById('enviar');
     const emailInput = document.getElementById('emailInput');
-    const msjSatisfactorio = document.getElementById('envioSatisfactorio');
+    const msjSatisfactorio = document.getElementById('alertaMensaje');
 
     // Expresión regular para validar correos electrónicos
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

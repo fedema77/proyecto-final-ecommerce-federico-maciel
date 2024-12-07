@@ -65,7 +65,7 @@ footer{
     justify-content: center;
 }
 
-.mensajeSatisfactorio {
+.mensajeNewsletterFooter {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
@@ -75,17 +75,17 @@ footer{
     display: none;
 }
 
-.mensajeSatisfactorio.mostrar {
+.mensajeNewsletterFooter.mostrar {
     display: block;
     opacity: 1;
     visibility: visible;
 }
 
-.mensajeSatisfactorio.correcto {
+.mensajeNewsletterFooter.correcto {
     color: rgb(8, 231, 38);
 }
 
-.mensajeSatisfactorio.error {
+.mensajeNewsletterFooter.error {
     color: red;
 }
 
@@ -155,7 +155,7 @@ footer{
     .footerPrincipal .col5{
         grid-column: span 2;
     }
-    .mensajeSatisfactorio{
+    .mensajeNewsletterFooter{
         margin: 0px;
         
     }
