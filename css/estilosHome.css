@@ -149,7 +149,9 @@
     background-color: rgba(143, 138, 138, 0.3)
 }
 
-.cardProductoOferta{
+.cardProductoOferta,
+.cardProductoMasVendido,
+.cardExploraProductos{
     display: contents;
 }
 

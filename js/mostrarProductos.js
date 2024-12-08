@@ -1,14 +1,22 @@
-export async function mostrarProductos(){
+export async function mostrarProductos(contenedorSelector, filtro=null, limite =null){
     try{
         const response = await fetch("productos.json");
-        const data = await response.json();
+        const productos = await response.json();
 
-        const article = document.querySelector(".cardProductoOferta");
+        const article = document.querySelector(contenedorSelector);
         article.innerHTML = "";
 
-        const productosLimitados = data.slice(0, 4);
+        let productosFiltrados = productos;
 
-        productosLimitados.forEach((producto) => {
+        if(filtro){
+            productosFiltrados = productos.filter((producto) => producto.categorias.includes(filtro));
+        }
+
+        if(limite){
+            productosFiltrados = productosFiltrados.slice(0, limite);
+        }
+
+        productosFiltrados.forEach((producto) => {
             const html = `
                 <article class="cardProducto">
                 <img src="./img/productos/${producto.titulo}.webp" alt="">

@@ -8,8 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
     validarNewsletter();
 
     // Página de Inicio
-    if(document.body.classList.contains('home'));
-        mostrarProductos();
+    if(document.body.classList.contains('home')){
+        mostrarProductos(".cardProductoOferta", "Ofertas", 4);
+        mostrarProductos(".cardProductoMasVendido", "Más Vendidos", 8);
+        mostrarProductos(".cardExploraProductos", null,12);
+    }
+
+    // Página de Ofertas
+    if(document.body.classList.contains('Ofertas')){
+        mostrarProductos(".cardProductoOferta", "Ofertas", 12);
+    }
 
     // Página de Contacto
     if(document.body.classList.contains('paginaContacto')){
