@@ -80,22 +80,23 @@ form{
     text-align: end;
 }
 
+/*Mensaje de validación de formulario*/
 .alerta {
-    background-color: #ffe6e6; /* Fondo rosa claro */
-    color: #b30000; /* Color del texto */
-    border: 1px solid #ffcccc; /* Borde rojo claro */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 15px; /* Espaciado interno */
-    margin-bottom: 20px; /* Espaciado superior */
-    font-family: Arial, sans-serif; /* Fuente legible */
-    font-size: 14px; /* Tamaño del texto */
-    display: none; /* Ocultar inicialmente */
+    background-color: #ffe6e6; 
+    color: #b30000; 
+    border: 1px solid #ffcccc; 
+    border-radius: 8px; 
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    display: none; 
 }
 
 .alerta ul {
     margin: 0;
     padding: 0;
-    list-style: none; /* Quita los puntos de lista */
+    list-style: none; 
 }
 
 .alerta li {
@@ -105,9 +106,9 @@ form{
 }
 
 .alerta li::before {
-    content: "❌"; /* Ícono de error */
+    content: "❌"; 
     margin-right: 10px;
-    color: #b30000; /* Mismo color que el texto */
+    color: #b30000; 
     font-size: 16px;
 }
 

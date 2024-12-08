@@ -149,6 +149,10 @@
     background-color: rgba(143, 138, 138, 0.3)
 }
 
+.cardProductoOferta{
+    display: contents;
+}
+
 /*Seccion Categorias*/
 .categorias{
     padding: 75px 0;

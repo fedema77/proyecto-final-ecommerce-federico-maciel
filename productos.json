@@ -1,256 +1,233 @@
 [
     {
-        "categoria": "Audio",
+        "categorias": ["Notebooks"],
         "id": 1,
-        "productos": [
-            {
-                "id": 101,
-                "titulo": "Auriculares Jbl Wave Flex Tws Black",
-                "descripcion": "Auriculares inalámbricos con sonido envolvente y gran comodidad.",
-                "imagen": "./img/productos/Auriculares Jbl Wave Flex Tws Black.webp",
-                "cantidad": 1,
-                "precio": 49.99,
-                "precioDescuento": 39.99,
-                "stock": 20
-            },
-            {
-                "id": 102,
-                "titulo": "Auriculares Philips Hi-Res",
-                "descripcion": "Sonido de alta resolución para audiófilos exigentes.",
-                "imagen": "./img/productos/Auriculares Philips Hi-Res.webp",
-                "cantidad": 1,
-                "precio": 59.99,
-                "precioDescuento": 49.99,
-                "stock": 20
-            },
-            {
-                "id": 103,
-                "titulo": "Auriculares Huawei Freebuds 6I Black",
-                "descripcion": "Auriculares premium con cancelación de ruido activa.",
-                "imagen": "./img/productos/Auriculares Huawei Freebuds 6I Black.webp",
-                "cantidad": 1,
-                "precio": 79.99,
-                "precioDescuento": 69.99,
-                "stock": 20
-            },
-            {
-                "id": 104,
-                "titulo": "Auriculares Jbl Tune770bt Blue",
-                "descripcion": "Auriculares Bluetooth con batería de larga duración.",
-                "imagen": "./img/productos/Auriculares Jbl Tune770bt Blue.webp",
-                "cantidad": 1,
-                "precio": 69.99,
-                "precioDescuento": 59.99,
-                "stock": 20
-            }
-        ]
+        "titulo": "Notebook Asus Laptop E410 Intel Celeron 14 E410ma-Bv1181w 4Gb 128 Emmc White W11 + Microsoft 365 Personal 3 Meses",
+        "descripcion": "Ligera, portátil y perfecta para estudiantes.",
+        "imagen": "./img/productos/Notebook Asus Laptop E410 Intel Celeron 14 E410ma-Bv1181w 4Gb 128 Emmc White W11 + Microsoft 365 Personal 3 Meses.webp",
+        "cantidad": 1,
+        "precio": 349.99,
+        "precioDescuento": 0,
+        "stock": 20
     },
     {
-        "categoria": "Notebook",
+        "categorias": ["Notebooks", "Ofertas"],
         "id": 2,
-        "productos": [
-            {
-                "id": 201,
-                "titulo": "Notebook Positivo Bgh At520l 14\" Celeron N4020",
-                "descripcion": "Notebook económica y compacta para tareas básicas.",
-                "imagen": "./img/productos/Notebook Positivo Bgh At520l 14.webp",
-                "cantidad": 1,
-                "precio": 299.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 202,
-                "titulo": "Notebook Dell Latitude 5440 I5-1335U",
-                "descripcion": "Rendimiento profesional con procesador Intel Core i5.",
-                "imagen": "./img/productos/Notebook Dell Latitude 5440 I5-1335U.webp",
-                "cantidad": 1,
-                "precio": 899.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 203,
-                "titulo": "Notebook Asus Laptop E410 Intel Celeron",
-                "descripcion": "Ligera, portátil y perfecta para estudiantes.",
-                "imagen": "./img/productos/Notebook Asus Laptop E410 Intel Celeron.webp",
-                "cantidad": 1,
-                "precio": 349.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 204,
-                "titulo": "Notebook Huawei Matebook D14 53013Wxm",
-                "descripcion": "Elegancia y potencia en un diseño ultrafino.",
-                "imagen": "./img/productos/Notebook Huawei Matebook D14 53013Wxm.webp",
-                "cantidad": 1,
-                "precio": 749.99,
-                "precioDescuento": 0,
-                "stock": 20
-            }
-        ]
+        "titulo": "Notebook Dell Latitude 5440 I5-1335U 8Gb 256Gb Ssd 14 Fhd 3Yr Basic",
+        "descripcion": "Rendimiento profesional con procesador Intel Core i5.",
+        "imagen": "./img/productos/Notebook Dell Latitude 5440 I5-1335U 8Gb 256Gb Ssd 14 Fhd 3Yr Basic.webp",
+        "cantidad": 1,
+        "precio": 899.99,
+        "precioDescuento": 764.99,
+        "stock": 20
     },
     {
-        "categoria": "Relampago",
+        "categorias": ["Notebooks", "Más Vendidos"],
         "id": 3,
-        "productos": [
-            {
-                "id": 301,
-                "titulo": "Camara Wifi Ezviz H8c 1080P Fhd",
-                "descripcion": "Cámara exterior con visión 360° en alta definición.",
-                "imagen": "./img/productos/Camara Wifi Ezviz H8c 1080P Fhd.webp",
-                "cantidad": 1,
-                "precio": 129.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 302,
-                "titulo": "Camara Wifi Ezviz H6c 2K+ Interior",
-                "descripcion": "Vigilancia avanzada para interiores con calidad 2K+.",
-                "imagen": "./img/productos/Camara Wifi Ezviz H6c 2K+ Interior.webp",
-                "cantidad": 1,
-                "precio": 89.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 303,
-                "titulo": "Microfono Jbl Premium Doble Usb",
-                "descripcion": "Micrófono de alta calidad con doble conectividad USB.",
-                "imagen": "./img/productos/Microfono Jbl Premium Doble Usb.webp",
-                "cantidad": 1,
-                "precio": 59.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 304,
-                "titulo": "Proyector Epson Portátil Epiqvision Fh02",
-                "descripcion": "Proyector portátil con Android TV integrado.",
-                "imagen": "./img/productos/Proyector Epson Portátil Epiqvision Fh02.webp",
-                "cantidad": 1,
-                "precio": 499.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 305,
-                "titulo": "Proyector Epson Epiqvision Flex Co-W01",
-                "descripcion": "Proyector flexible para presentaciones y entretenimiento.",
-                "imagen": "./img/productos/Proyector Epson Epiqvision Flex Co-W01.webp",
-                "cantidad": 1,
-                "precio": 399.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 306,
-                "titulo": "Roku Streaming Express 4K",
-                "descripcion": "Streaming en 4K con Roku fácil de usar.",
-                "imagen": "./img/productos/Roku Streaming Express 4K.webp",
-                "cantidad": 1,
-                "precio": 39.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 307,
-                "titulo": "Roku Streaming Stick 4K",
-                "descripcion": "Dispositivo de streaming compacto y potente.",
-                "imagen": "./img/productos/Roku Streaming Stick 4K.webp",
-                "cantidad": 1,
-                "precio": 49.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 308,
-                "titulo": "Soporte Like-T Movil 32\" A 85\"",
-                "descripcion": "Soporte versátil para televisores de gran tamaño.",
-                "imagen": "./img/productos/Soporte Like-T Movil.webp",
-                "cantidad": 1,
-                "precio": 79.99,
-                "precioDescuento": 0,
-                "stock": 20
-            }
-        ]
+        "titulo": "Notebook Huawei Matebook D14 53013Wxm 14 Intel Core I5 8Gb 512Gb Windows 11",
+        "descripcion": "Elegancia y potencia en un diseño ultrafino.",
+        "imagen": "./img/productos/Notebook Huawei Matebook D14 53013Wxm 14 Intel Core I5 8Gb 512Gb Windows 11.webp",
+        "cantidad": 1,
+        "precio": 749.99,
+        "precioDescuento": 674.99,
+        "stock": 5
     },
     {
-        "categoria": "Mouse",
+        "categorias": ["Notebooks"],
         "id": 4,
-        "productos": [
-            {
-                "id": 401,
-                "titulo": "Mouse Logitech Gaming G502 X Plus Negro",
-                "descripcion": "Mouse gamer de alto rendimiento en color negro.",
-                "imagen": "./img/productos/Mouse Logitech Gaming G502 X Plus Negro.webp",
-                "cantidad": 1,
-                "precio": 89.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 402,
-                "titulo": "Mouse Logitech Gaming G502 X Plus Blanco",
-                "descripcion": "Diseño blanco para el gaming con precisión.",
-                "imagen": "./img/productos/Mouse Logitech Gaming G502 X Plus Blanco.webp",
-                "cantidad": 1,
-                "precio": 89.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 403,
-                "titulo": "Mouse Inalámbrico Logitech G502 Lightspeed",
-                "descripcion": "Mouse inalámbrico con velocidad ultrarrápida.",
-                "imagen": "./img/productos/Mouse Inalámbrico Logitech G502 Lightspeed.webp",
-                "cantidad": 1,
-                "precio": 99.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 404,
-                "titulo": "Mouse Logitech Hero G502 Alto Rendimiento",
-                "descripcion": "Rendimiento óptimo para gamers profesionales.",
-                "imagen": "./img/productos/Mouse Logitech Hero G502 Alto Rendimiento.webp",
-                "cantidad": 1,
-                "precio": 79.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 405,
-                "titulo": "Mouse Gaming G203 Lightsync Negro",
-                "descripcion": "Mouse gaming negro con iluminación RGB.",
-                "imagen": "./img/productos/Mouse Gaming G203 Lightsync Negro.webp",
-                "cantidad": 1,
-                "precio": 39.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 406,
-                "titulo": "Mouse Gaming + Pad + Auriculares Trust Gtx 790",
-                "descripcion": "Combo ideal para gamers exigentes.",
-                "imagen": "./img/productos/Mouse Gaming Trust Gtx 790.webp",
-                "cantidad": 1,
-                "precio": 59.99,
-                "precioDescuento": 0,
-                "stock": 20
-            },
-            {
-                "id": 407,
-                "titulo": "Mouse Gamer Asus P309 Tuf Gaming M3 Gen Ii",
-                "descripcion": "Mouse gamer de última generación de Asus.",
-                "imagen": "./img/productos/Mouse Gamer Asus P309 Tuf Gaming M3 Gen Ii.webp",
-                "cantidad": 1,
-                "precio": 49.99,
-                "precioDescuento": 0,
-                "stock": 20
-            }
-        ]
+        "titulo": "Notebook Positivo Bgh At520l 14 Celeron N4020 4 Gb 128 Gb Windows 11",
+        "descripcion": "Notebook económica y compacta para tareas básicas.",
+        "imagen": "./img/productos/Notebook Positivo Bgh At520l 14 Celeron N4020 4 Gb 128 Gb Windows 11.webp",
+        "cantidad": 1,
+        "precio": 299.99,
+        "precioDescuento": 254.99,
+        "stock": 20
+    },
+    {
+        "categorias": ["Proyectores", "Más Vendidos"],
+        "id": 5,
+        "titulo": "Proyector Epson Epiqvision Flex Co-W01",
+        "descripcion": "Proyector flexible para entretenimiento y presentaciones.",
+        "imagen": "./img/productos/Proyector Epson Epiqvision Flex Co-W01.webp",
+        "cantidad": 1,
+        "precio": 399.99,
+        "precioDescuento": 339.99,
+        "stock": 5
+    },
+    {
+        "categorias": ["Proyectores", "Ofertas"],
+        "id": 6,
+        "titulo": "Proyector Epson Portátil Epiqvision Fh02 Con Android Tv",
+        "descripcion": "Proyector portátil con Android TV integrado.",
+        "imagen": "./img/productos/Proyector Epson Portátil Epiqvision Fh02 Con Android Tv.webp",
+        "cantidad": 1,
+        "precio": 499.99,
+        "precioDescuento": 424.99,
+        "stock": 20
+    },
+    {
+        "categorias": ["Streaming"],
+        "id": 7,
+        "titulo": "Roku Streaming Express 4K",
+        "descripcion": "Streaming en 4K con una interfaz fácil de usar.",
+        "imagen": "./img/productos/Roku Streaming Express 4K.webp",
+        "cantidad": 1,
+        "precio": 39.99,
+        "precioDescuento": 35.99,
+        "stock": 20
+    },
+    {
+        "categorias": ["Streaming", "Más Vendidos"],
+        "id": 8,
+        "titulo": "Roku Streaming Stick 4K",
+        "descripcion": "Streaming en calidad 4K con diseño compacto.",
+        "imagen": "./img/productos/Roku Streaming Stick 4K.webp",
+        "cantidad": 1,
+        "precio": 49.99,
+        "precioDescuento": 44.99,
+        "stock": 5
+    },
+    {
+        "categorias": ["Soportes"],
+        "id": 9,
+        "titulo": "Soporte Like-T Movil 32 A 85",
+        "descripcion": "Soporte móvil versátil para televisores grandes.",
+        "imagen": "./img/productos/Soporte Like-T Movil 32 A 85.webp",
+        "cantidad": 1,
+        "precio": 79.99,
+        "precioDescuento": 71.99,
+        "stock": 20
+    },
+    {
+        "categorias": ["Audio", "Más Vendidos"],
+        "id": 10,
+        "titulo": "Auriculares Huawei Freebuds 6I Black",
+        "descripcion": "Auriculares premium con cancelación de ruido activa.",
+        "imagen": "./img/productos/Auriculares Huawei Freebuds 6I Black.webp",
+        "cantidad": 1,
+        "precio": 79.99,
+        "precioDescuento": 67.99,
+        "stock": 5
+    },
+    {
+        "categorias": ["Audio"],
+        "id": 11,
+        "titulo": "Auriculares Jbl Tune770bt Blue",
+        "descripcion": "Auriculares Bluetooth con batería de larga duración.",
+        "imagen": "./img/productos/Auriculares Jbl Tune770bt Blue.webp",
+        "cantidad": 1,
+        "precio": 69.99,
+        "precioDescuento": 59.49,
+        "stock": 20
+    },
+    {
+        "categorias": ["Audio", "Ofertas"],
+        "id": 12,
+        "titulo": "Auriculares Jbl Wave Flex Tws Black",
+        "descripcion": "Auriculares inalámbricos con sonido envolvente y gran comodidad.",
+        "imagen": "./img/productos/Auriculares Jbl Wave Flex Tws Black.webp",
+        "cantidad": 1,
+        "precio": 49.99,
+        "precioDescuento": 42.49,
+        "stock": 20
+    },
+    {
+        "categorias": ["Audio", "Más Vendidos"],
+        "id": 13,
+        "titulo": "Auriculares Philips Hi-Res",
+        "descripcion": "Sonido de alta resolución para audiófilos exigentes.",
+        "imagen": "./img/productos/Auriculares Philips Hi-Res.webp",
+        "cantidad": 1,
+        "precio": 59.99,
+        "precioDescuento": 50.99,
+        "stock": 5
+    },
+    {
+        "categorias": ["Cámaras", "Más Vendidos"],
+        "id": 14,
+        "titulo": "Camara Wifi Ezviz H6c 2K+ Interior 360",
+        "descripcion": "Vigilancia avanzada para interiores con calidad 2K+.",
+        "imagen": "./img/productos/Camara Wifi Ezviz H6c 2K+ Interior 360.webp",
+        "cantidad": 1,
+        "precio": 89.99,
+        "precioDescuento": 76.49,
+        "stock": 5
+    },
+    {
+        "categorias": ["Cámaras"],
+        "id": 15,
+        "titulo": "Camara Wifi Ezviz H8c 1080P Fhd Exterior 360",
+        "descripcion": "Cámara exterior con visión 360° en alta definición.",
+        "imagen": "./img/productos/Camara Wifi Ezviz H8c 1080P Fhd Exterior 360.webp",
+        "cantidad": 1,
+        "precio": 129.99,
+        "precioDescuento": 110.49,
+        "stock": 20
+    },
+    {
+        "categorias": ["Micrófonos", "Más Vendidos"],
+        "id": 16,
+        "titulo": "Microfono Jbl Premium Doble Usb",
+        "descripcion": "Micrófono de alta calidad con doble conectividad USB.",
+        "imagen": "./img/productos/Microfono Jbl Premium Doble Usb.webp",
+        "cantidad": 1,
+        "precio": 59.99,
+        "precioDescuento": 50.99,
+        "stock": 5
+    },
+    {
+        "categorias": ["Mouse", "Ofertas"],
+        "id": 17,
+        "titulo": "Mouse Gamer Asus P309 Tuf Gaming M3 Gen Ii",
+        "descripcion": "Mouse gamer de última generación de Asus.",
+        "imagen": "./img/productos/Mouse Gamer Asus P309 Tuf Gaming M3 Gen Ii.webp",
+        "cantidad": 1,
+        "precio": 49.99,
+        "precioDescuento": 42.49,
+        "stock": 20
+    },
+    {
+        "categorias": ["Mouse"],
+        "id": 18,
+        "titulo": "Mouse Gaming + Pad + Auriculares Gaming Trust Gtx 790",
+        "descripcion": "Combo ideal para gamers exigentes.",
+        "imagen": "./img/productos/Mouse Gaming + Pad + Auriculares Gaming Trust Gtx 790.webp",
+        "cantidad": 1,
+        "precio": 59.99,
+        "precioDescuento": 50.99,
+        "stock": 20
+    },
+    {
+        "categorias": ["Mouse", "Más Vendidos"],
+        "id": 19,
+        "titulo": "Mouse Gaming G203 Lightsync Blanco",
+        "descripcion": "Mouse gaming blanco con iluminación RGB.",
+        "imagen": "./img/productos/Mouse Gaming G203 Lightsync Blanco.webp",
+        "cantidad": 1,
+        "precio": 39.99,
+        "precioDescuento": 33.99,
+        "stock": 5
+    },
+    {
+        "categorias": ["Mouse", "Ofertas"],
+        "id": 20,
+        "titulo": "Mouse Gaming G203 Lightsync Negro",
+        "descripcion": "Mouse gaming negro con iluminación RGB.",
+        "imagen": "./img/productos/Mouse Gaming G203 Lightsync Negro.webp",
+        "cantidad": 1,
+        "precio": 39.99,
+        "precioDescuento": 33.99,
+        "stock": 20
+    },
+    {
+        "categorias": ["Mouse", "Más Vendidos"],
+        "id": 21,
+        "titulo": "Mouse Gaming Logitech G203 Lightsync Lilac",
+        "descripcion": "Mouse lilac con iluminación RGB, diseño vibrante.",
+        "imagen": "./img/productos/Mouse Gaming Logitech G203 Lightsync Lilac.webp",
+        "cantidad": 1,
+        "precio": 39.99,
+        "precioDescuento": 33.99,
+        "stock": 5
     }
 ]
