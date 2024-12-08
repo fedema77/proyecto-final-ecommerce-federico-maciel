@@ -4,18 +4,19 @@ export async function mostrarProductos(){
         const data = await response.json();
 
         const article = document.querySelector(".cardProductoOferta");
-
         article.innerHTML = "";
 
-        data.forEach((producto) => {
+        const productosLimitados = data.slice(0, 4);
+
+        productosLimitados.forEach((producto) => {
             const html = `
                 <article class="cardProducto">
-                <img src="./img/productos/${producto.imagen}" alt="">
-                <h3>Laptop Pro 14"</h3>
-                <p class="productoDescripción">Ideal para edición y programación. Potencia y portabilidad.</p>
+                <img src="./img/productos/${producto.titulo}.webp" alt="">
+                <h3>${producto.titulo}</h3>
+                <p class="productoDescripción">${producto.descripcion}</p>
                 <div class="precio">
-                    <p class="precioRegular">$1499</p>
-                    <p class="precioDescuento">$999</p>
+                    <p class="precioRegular">$${producto.precio}</p>
+                    <p class="precioDescuento">$${producto.precioDescuento}</p>
                 </div>
                 <div class="botones">
                     <a href="./producto.html" class="btnCarrito">Ver más</a>
@@ -28,5 +29,6 @@ export async function mostrarProductos(){
             article.innerHTML += html;
         });
 
+        
     } catch (err) {console.log('Ocurrio un error: ', err)}
 }
