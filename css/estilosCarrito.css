@@ -11,13 +11,18 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 70%;
 }
 
 .itemsCarrito{
     display: flex;
+    justify-content: space-between;
+}
+
+.contenedorIzq, .contendorDer{
+    display: flex;
     align-items: center;
-    gap: 10px;
-    height: fit-content;
+    gap: 20px;
 }
 
 .itemsCarrito .selectorCantidad {
@@ -26,6 +31,7 @@
     border-radius: 4px;
     overflow: hidden;
     font-size: 1.2em;
+    width: fit-content;
 }
 
 .itemsCarrito .selectorCantidad button {
@@ -195,7 +201,9 @@ input[type=text]:focus {
     .principal{
         flex-direction: column;
     }
-
+    .contenedorItemsCarrito{
+        width: 100%;
+    }
     .contenedorTotales{
         width: 40%;
         align-self: end;
@@ -208,6 +216,13 @@ input[type=text]:focus {
     .principal {
         padding: 20px;
         width: 100%;
+    }
+    .contendorDer{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .contenedorIzq{
+        
     }
     .itemsCarrito{
         flex-direction: column;

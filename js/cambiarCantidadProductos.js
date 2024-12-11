@@ -1,7 +1,5 @@
-export function cantidadProductos(){
-    // Cambiar cantidad de productos
+export function cambiarCantidadProductos(){
     document.querySelectorAll('.selectorCantidad').forEach(selector => {
-        // Dentro de cada selector, identificamos los botones y el span de cantidad
         const incrementarBtn = selector.querySelector('.incrementar');
         const decrementarBtn = selector.querySelector('.decrementar');
         const cantidadProducto = selector.querySelector('.cantidadProducto');

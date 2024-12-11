@@ -128,12 +128,12 @@
 .accionesProducto .comprar:hover,
 .accionesProducto .selectorCantidad .decrementar:hover,
 .accionesProducto .selectorCantidad .incrementar:hover,
-.accionesProducto .wishlist:hover {
+.accionesProducto .btnWishlist:hover {
     background-color: black;
     color: rgb(8, 231, 38);
 }
 
-.accionesProducto .wishlist {
+.accionesProducto .btnWishlist {
     background: none;
     border: 1px solid #ddd;
     cursor: pointer;
@@ -145,13 +145,13 @@
     border-radius: 8px;
 }
 
-.accionesProducto .wishlist svg {
+.accionesProducto .btnWishlist svg {
     width: 50px; 
     height: 50px;
 }
 
-.accionesProducto .wishlist svg:hover,
-.accionesProducto .wishlist svg path:hover {
+.accionesProducto .btnWishlist svg:hover,
+.accionesProducto .btnWishlist svg path:hover {
     fill: currentColor;
     stroke: rgb(8, 231, 38);
     stroke-width: 3;
