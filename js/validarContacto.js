@@ -1,8 +1,8 @@
 export function validarContacto(){
-    const alertaMensaje = document.getElementById('alertaMensaje');
+    const alertaMensajeNewsletter = document.getElementById('alertaMensajeNewsletter');
     const form = document.getElementById('formContacto');
     const nombreInput = document.getElementById('formInputNombre');
-    const emailInput = document.getElementById('formInputEmail');
+    const emailInputNewsletter = document.getElementById('formInputEmail');
     const telInput = document.getElementById('formInputTel');
     const textoInput = document.getElementById('formInputText');
     const aceptInput = document.getElementById('formCheckAceptacion');
@@ -12,7 +12,7 @@ export function validarContacto(){
 
     form.addEventListener('submit', (e) => {
         let errores = [];
-        alertaMensaje.style.display = 'none';
+        alertaMensajeNewsletter.style.display = 'none';
 
         // Valido nombre con al menos 3 letras
         if (nombreInput.value.trim().length < 3){
@@ -20,7 +20,7 @@ export function validarContacto(){
         }
 
         // Valido email
-        if (!emailRegex.test(emailInput.value.trim())){
+        if (!emailRegex.test(emailInputNewsletter.value.trim())){
             errores.push('Ingresa un correo válido.');
         }
         
@@ -42,14 +42,14 @@ export function validarContacto(){
         // Mostrar mensaje de error
         if (errores.length > 0) {
             e.preventDefault();
-            alertaMensaje.style.display = 'block'; // Muestra la alerta
-            alertaMensaje.innerHTML = `
+            alertaMensajeNewsletter.style.display = 'block'; // Muestra la alerta
+            alertaMensajeNewsletter.innerHTML = `
                 <ul>
                     ${errores.map(error => `<li>${error}</li>`).join('')}
                 </ul>
             `;
         } else {
-            alertaMensaje.style.display = 'none'; // Oculta la alerta si no hay errores
+            alertaMensajeNewsletter.style.display = 'none'; // Oculta la alerta si no hay errores
             form.reset();
             form.submit();
         }

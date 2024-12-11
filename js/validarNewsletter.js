@@ -1,30 +1,30 @@
 export function validarNewsletter(){
     const botonEnviar = document.getElementById('enviar');
-    const emailInput = document.getElementById('emailInput');
-    const alertaMensaje = document.getElementById('alertaMensaje');
+    const emailInputNewsletter = document.getElementById('emailInputNewsletter');
+    const alertaMensajeNewsletter = document.getElementById('alertaMensajeNewsletter');
 
     // Expresión regular para validar correos electrónicos
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Evento de clic en el botón
     botonEnviar.addEventListener('click', () => {
-        const email = emailInput.value.trim(); // Obtener y limpiar el valor del input
+        const email = emailInputNewsletter.value.trim(); // Obtener y limpiar el valor del input
         
         if (emailRegex.test(email)) {
             // Correo válido
-            alertaMensaje.textContent = 'Correo enviado correctamente';
-            alertaMensaje.classList.add('mostrar', 'correcto');
-            alertaMensaje.classList.remove('error');
-            emailInput.value = ''; // Limpiar el input
+            alertaMensajeNewsletter.textContent = 'Correo enviado correctamente';
+            alertaMensajeNewsletter.classList.add('mostrar', 'correcto');
+            alertaMensajeNewsletter.classList.remove('error');
+            emailInputNewsletter.value = ''; // Limpiar el input
         } else {
             // Correo inválido
-            alertaMensaje.textContent = 'Por favor, ingresa un correo válido';
-            alertaMensaje.classList.add('mostrar', 'error');
-            alertaMensaje.classList.remove('correcto');
+            alertaMensajeNewsletter.textContent = 'Por favor, ingresa un correo válido';
+            alertaMensajeNewsletter.classList.add('mostrar', 'error');
+            alertaMensajeNewsletter.classList.remove('correcto');
         }
         // Ocultar el mensaje después de 3 segundos
         setTimeout(()=>{
-            alertaMensaje.classList.remove('mostrar');
+            alertaMensajeNewsletter.classList.remove('mostrar');
         }, 3000);
     });
 }
