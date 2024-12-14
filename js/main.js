@@ -3,11 +3,13 @@ import {validarContacto} from './validarContacto.js';
 import {cambiarCantidadProductos} from './cambiarCantidadProductos.js';
 import {mostrarProductos} from './mostrarProductos.js';
 import {carrito} from './carrito.js';
-import { mostrarCarrito } from './mostrarCarrito.js';
+import {mostrarCarrito} from './mostrarCarrito.js';
+import {actualizarContadorCarrito} from './actualizarContadorCarrito.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Todo el sitio
     validarNewsletter();
+    actualizarContadorCarrito();
 
     // Página de Inicio
     if(document.body.classList.contains('home')){

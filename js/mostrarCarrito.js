@@ -1,4 +1,5 @@
 import {actualizarTotales} from './actualizarTotales.js';
+import {actualizarContadorCarrito} from './actualizarContadorCarrito.js';
 
 export function mostrarCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -37,6 +38,7 @@ export function mostrarCarrito() {
     });
 
     actualizarTotales(); // Totales del carrito
+    actualizarContadorCarrito();
 }
 
 // Funciones eliminar, incrementar y decrementar

@@ -1,3 +1,5 @@
+import { actualizarContadorCarrito } from "./actualizarContadorCarrito.js";
+
 export async function carrito() {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     try {
@@ -42,6 +44,7 @@ export async function carrito() {
                     carrito.push(productoCarrito); 
                 }
                 localStorage.setItem("carrito", JSON.stringify(carrito));
+                actualizarContadorCarrito();
 
                 // Mostramos el mensaje de éxito
                 const mensaje = e.target.closest('article').querySelector('.mensajeExito');
