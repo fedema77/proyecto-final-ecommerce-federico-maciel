@@ -5,11 +5,14 @@ import {mostrarProductos} from './mostrarProductos.js';
 import {carrito} from './carrito.js';
 import {mostrarCarrito} from './mostrarCarrito.js';
 import {actualizarContadorCarrito} from './actualizarContadorCarrito.js';
+import {actualizarWishlistContador, manejarWishlist, mostrarWishlist} from './wishlist.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Todo el sitio
     validarNewsletter();
     actualizarContadorCarrito();
+    manejarWishlist();
+    actualizarWishlistContador();
 
     // Página de Inicio
     if(document.body.classList.contains('home')){
@@ -41,5 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if(document.body.classList.contains('carrito')){
         carrito();
         mostrarCarrito();
+    }
+
+    // Página de Wishlist
+    if (document.body.classList.contains('wishlist')) {
+        mostrarWishlist();
     }
 });

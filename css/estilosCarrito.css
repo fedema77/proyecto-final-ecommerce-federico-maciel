@@ -65,9 +65,10 @@
     font-size: 1em;
 }
 
-.itemsCarrito .eliminar {
+.itemsCarrito .eliminar,
+.itemWishlist .eliminar {
     background-color: transparent;
-    color: rgb(8, 231, 38);
+    color: rgb(2, 148, 22);
     border: none;
     padding: 10px 20px;
     font-size: 1.25em;
@@ -100,8 +101,6 @@
     color: tomato;
     font-weight: 600;
 }
-
-
 
 .contenedorTotales{
     min-width: 265px;
