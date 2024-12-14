@@ -3,6 +3,7 @@ import {validarContacto} from './validarContacto.js';
 import {cambiarCantidadProductos} from './cambiarCantidadProductos.js';
 import {mostrarProductos} from './mostrarProductos.js';
 import {carrito} from './carrito.js';
+import { mostrarCarrito } from './mostrarCarrito.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Todo el sitio
@@ -10,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Página de Inicio
     if(document.body.classList.contains('home')){
+        // Podemos manejar la vista desde aca: función("DOM","CATEGORIA","CANTIDAD A MOSTRAR")
         mostrarProductos(".cardProductoOferta", "Ofertas", 4);
         mostrarProductos(".cardProductoMasVendido", "Más Vendidos", 8);
         mostrarProductos(".cardExploraProductos", null,12);
@@ -27,11 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
         validarContacto();
     }
 
-    // Página de Producto, Carrito, Checkout
+    // Página de Producto, , Checkout
     if(document.body.classList.contains('productos') ||
-       document.body.classList.contains('carrito') ||
        document.body.classList.contains('checkout')){
         cambiarCantidadProductos();
-            carrito();
+    }
+
+    // Página de Producto, Carrito, Checkout
+    if(document.body.classList.contains('carrito')){
+        carrito();
+        mostrarCarrito();
     }
 });

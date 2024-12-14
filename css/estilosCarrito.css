@@ -17,12 +17,25 @@
 .itemsCarrito{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contenedorIzq, .contendorDer{
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.contenedorIzq{
+    width: 70%;
+}
+
+.contenedorIzq .imgThumbnail1{
+    max-width: 23%;
+}
+
+.contendorDer{
+    flex-direction: column;
 }
 
 .itemsCarrito .selectorCantidad {
@@ -222,7 +235,7 @@ input[type=text]:focus {
         justify-content: flex-end;
     }
     .contenedorIzq{
-        
+
     }
     .itemsCarrito{
         flex-direction: column;
