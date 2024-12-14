@@ -8,8 +8,8 @@ export async function carrito() {
         document.addEventListener('click', (e) => {
             if (e.target.classList.contains("btnCarrito")) {
                 const id = e.target.closest('article').dataset.id; // Obtener el id del producto
+                
                 const producto = productos.find((producto) => producto.id == id); // Buscar el producto
-
                 if (!producto) return; // Si no se encuentra el producto, salir
 
                 // Verificar si el producto ya está en el carrito
@@ -42,6 +42,15 @@ export async function carrito() {
                     carrito.push(productoCarrito); 
                 }
                 localStorage.setItem("carrito", JSON.stringify(carrito));
+
+                // Mostramos el mensaje de éxito
+                const mensaje = e.target.closest('article').querySelector('.mensajeExito');
+                mensaje.style.display = "block";
+
+                // Ocultamos el mensaje después de 3 segundos
+                setTimeout(() => {
+                    mensaje.style.display = "none";
+                }, 3000);
             }
         });
     } catch (err) {
