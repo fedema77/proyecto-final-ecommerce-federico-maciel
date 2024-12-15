@@ -39,7 +39,7 @@ export async function mostrarProductos(contenedorSelector, filtro = null, limite
                             </svg>
                         </button>
                     </div>
-                    <p class="mensajeExito" style="display: none; text-align: center; margin-bottom: 10px; color: rgb(8, 231, 38);background-color: black; font-family: Montserrat, sans-serif; font-size: 1em; margin-top: 10px;">Producto agregado al carrito</p>
+                    <p class="mensajeExito" style="display: none; text-align: center; margin-bottom: 10px; color: rgb(8, 231, 38);background-color: black; font-family: Montserrat, sans-serif; font-size: 1em; margin-top: 10px;"></p>
                 </article>
             `;
             article.innerHTML += html;

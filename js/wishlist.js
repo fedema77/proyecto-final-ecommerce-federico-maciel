@@ -1,5 +1,8 @@
 export async function manejarWishlist(id) {
     const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    // Parrafo informativo para alertar sobre productos agregados o eliminados de wishlist
+    const cardProducto = document.querySelector(`.cardProducto[data-id="${id}"]`);
+    const mensajeNotificador = cardProducto.querySelector(".mensajeExito");
 
     // Verificamos si el producto ya está en la wishlist
     const productoExistente = wishlist.find((producto) => producto.id == id);
@@ -8,8 +11,15 @@ export async function manejarWishlist(id) {
         // Si ya está, lo eliminamos
         const nuevaWishlist = wishlist.filter((producto) => producto.id != id);
         localStorage.setItem("wishlist", JSON.stringify(nuevaWishlist));
-        console.log(`Producto ${id} eliminado de la wishlist`);
+
         // Actualizamos contador de wishlist
+        mensajeNotificador.textContent = "Eliminado de Wishlist";
+        mensajeNotificador.style.color = "rgb(255, 25, 25)";
+        mensajeNotificador.style.display = "block";
+        // Ocultar el mensaje después de 3 segundos
+        setTimeout(() => {
+            mensajeNotificador.style.display = "none";
+        }, 3000);
         actualizarWishlistContador();
         return;
     } else {
@@ -21,10 +31,7 @@ export async function manejarWishlist(id) {
             // Buscamos el producto por su ID
             const producto = productos.find((producto) => producto.id == id);
 
-            if (!producto) {
-                console.log(`Producto con id ${id} no encontrado`);
-                return;
-            }
+            if (!producto) return;
 
             // Desestructuramos los detalles necesarios del producto
             const { img, titulo, precioDescuento, precio, stock } = producto;
@@ -42,7 +49,16 @@ export async function manejarWishlist(id) {
             // Lo agregamos a la wishlist
             wishlist.push(productoWishlist);
             localStorage.setItem("wishlist", JSON.stringify(wishlist));
-            console.log(`Producto ${id} agregado a la wishlist`);
+
+            // Mostrar mensaje de éxito
+            mensajeNotificador.textContent = "Producto agregado a Wishlist";
+            mensajeNotificador.style.color = "rgb(8, 231, 38)";
+            mensajeNotificador.style.display = "block";
+            // Ocultar el mensaje después de 3 segundos
+            setTimeout(() => {
+                mensajeNotificador.style.display = "none";
+            }, 3000);
+
         } catch (error) {
             console.log("Error al agregar a la wishlist:", error);
         }

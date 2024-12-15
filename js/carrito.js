@@ -17,16 +17,22 @@ export async function carrito() {
                 // Verificar si el producto ya está en el carrito
                 const productoExistente = carrito.find(item => item.id == producto.id);
 
+                const mensajeNotificador = e.target.closest(".cardProducto").querySelector(".mensajeExito");
+
                 if (productoExistente) {
                     // Si el producto ya existe, actualizamos la cantidad
                     const cantidadNueva = productoExistente.cantidad + 1;
 
                     // Verificamos si hay suficiente stock
-                    if (cantidadNueva <= producto.stock) {
-                        productoExistente.cantidad = cantidadNueva; // Actualizar cantidad en carrito
+                    if (cantidadNueva <= productoExistente.stock) {
+                        productoExistente.cantidad = cantidadNueva;
+                        mensajeNotificador.textContent = "Producto agregado al carrito";
+                        mensajeNotificador.style.color = "rgb(8, 231, 38)";
+                        mensajeNotificador.style.display = "block";
                     } else {
-                        console.log('No hay suficiente stock para este producto');
-                        return;
+                        mensajeNotificador.textContent = "No hay más stock disponible";
+                        mensajeNotificador.style.color = "rgb(255, 25, 25)";
+                        mensajeNotificador.style.display = "block";
                     }
                 } else {
                     // Si el producto no está en el carrito, lo agregamos
@@ -46,13 +52,9 @@ export async function carrito() {
                 localStorage.setItem("carrito", JSON.stringify(carrito));
                 actualizarContadorCarrito();
 
-                // Mostramos el mensaje de éxito
-                const mensaje = e.target.closest('article').querySelector('.mensajeExito');
-                mensaje.style.display = "block";
-
                 // Ocultamos el mensaje después de 3 segundos
                 setTimeout(() => {
-                    mensaje.style.display = "none";
+                    mensajeNotificador.style.display = "none";
                 }, 3000);
             }
         });
