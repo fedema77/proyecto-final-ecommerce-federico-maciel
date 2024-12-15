@@ -9,6 +9,9 @@ export async function manejarWishlist(id) {
         const nuevaWishlist = wishlist.filter((producto) => producto.id != id);
         localStorage.setItem("wishlist", JSON.stringify(nuevaWishlist));
         console.log(`Producto ${id} eliminado de la wishlist`);
+        // Actualizamos contador de wishlist
+        actualizarWishlistContador();
+        return;
     } else {
         try {
             // Si no está, buscamos el producto completo desde productos.json
@@ -44,11 +47,9 @@ export async function manejarWishlist(id) {
             console.log("Error al agregar a la wishlist:", error);
         }
     }
-
     // Actualizamos el contador de la wishlist
     actualizarWishlistContador();
 }
-
 
 // Función para mostrar la wishlist en su página
 export function mostrarWishlist() {

@@ -46,11 +46,11 @@ export async function mostrarProductos(contenedorSelector, filtro = null, limite
         });
 
         // Detectamos clics en botones de wishlist
-        document.querySelectorAll(".btnWishlist").forEach((boton) => {
-            boton.addEventListener("click", (e) => {
+        article.addEventListener("click", (e) => {
+            if (e.target.closest(".btnWishlist")) {
                 const id = e.target.closest(".cardProducto").dataset.id;
-                manejarWishlist(id); // Llamada a manejarWishlist
-            });
+                manejarWishlist(id); // Llama a la función para agregar/eliminar de la wishlist
+            }
         });
     } catch (err) {
         console.log("Ocurrio un error: ", err);

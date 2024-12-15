@@ -36,6 +36,7 @@
 
 .contendorDer{
     flex-direction: column;
+    justify-content: center;
 }
 
 .itemsCarrito .selectorCantidad {
