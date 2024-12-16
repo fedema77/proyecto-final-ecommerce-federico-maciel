@@ -502,7 +502,8 @@
     padding: 10px;
 }
 
-.btnCarrito {
+.btnCarrito,
+.btnCarritoGaleria {
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
@@ -513,7 +514,12 @@
     width: 100%;
 }
 
-.btnCarrito:hover {
+.btnCarritoGaleria{
+    width: auto;
+}
+
+.btnCarrito:hover,
+.btnCarritoGaleria:hover {
     background-color: rgb(8, 231, 38);
     color: black;
 }
