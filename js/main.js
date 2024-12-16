@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Todo el sitio
     validarNewsletter();
     actualizarContadorCarrito();
-    manejarWishlist();
     actualizarWishlistContador();
 
     // Página de Inicio

@@ -1,5 +1,5 @@
 export function validarNewsletter(){
-    const botonEnviar = document.getElementById('enviar');
+    const botonEnviar = document.getElementById('btnEnviarNewsletter');
     const emailInputNewsletter = document.getElementById('emailInputNewsletter');
     const alertaMensajeNewsletter = document.getElementById('alertaMensajeNewsletter');
 
@@ -8,7 +8,7 @@ export function validarNewsletter(){
 
     // Evento de clic en el botón
     botonEnviar.addEventListener('click', () => {
-        const email = emailInputNewsletter.value.trim(); // Obtener y limpiar el valor del input
+        const email = emailInputNewsletter.value.trim();
         
         if (emailRegex.test(email)) {
             // Correo válido
