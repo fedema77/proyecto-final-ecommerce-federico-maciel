@@ -4,9 +4,9 @@ Este es un proyecto desarrollado como parte de mi curso de Front-End en TalentoT
 
 ## Características
 
-- **API de productos**: Los productos se obtienen dinámicamente a través de una API externa.
-- **Interfaz responsive**: La interfaz se adapta a diferentes tamaños de pantalla gracias al uso de CSS.
-- **Interactividad con JavaScript**: Funcionalidades como agregar productos al carrito o filtrar por categoría son manejadas con JavaScript.
+- **API de productos**: Los productos se obtienen dinámicamente a través de una API interna.
+- **Interfaz responsive**: La interfaz se adapta a diferentes tamaños de pantalla gracias al uso de CSS con media queries (Tablet: 768px y Mobil: 425px).
+- **Interactividad con JavaScript**: Funcionalidades como agregar productos al carrito, agregar a wishlist, actualizar el subtotl y total al cambiar la cantidad de productos, limite de stock, informar con alert sobre stock, validaciones en el newsletter del footer y en el formulario de Contacto. El sitio carga dinamicamente el contenido desde el JSON pudiendolo filtrar por categorias desde el main.js.
 - **Diseño modular**: El código está organizado de manera que facilita su mantenimiento y escalabilidad.
 
 ## Tecnologías utilizadas
