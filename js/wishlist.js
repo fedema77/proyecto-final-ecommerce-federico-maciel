@@ -16,7 +16,6 @@ export async function manejarWishlist(id) {
         mensajeNotificador.textContent = "Eliminado de Wishlist";
         mensajeNotificador.style.color = "rgb(255, 25, 25)";
         mensajeNotificador.style.display = "block";
-        // Ocultar el mensaje después de 3 segundos
         setTimeout(() => {
             mensajeNotificador.style.display = "none";
         }, 3000);
@@ -33,7 +32,7 @@ export async function manejarWishlist(id) {
 
             if (!producto) return;
 
-            // Desestructuramos los detalles necesarios del producto
+            // Desestructuración
             const { img, titulo, precioDescuento, precio, stock } = producto;
 
             // Creamos el objeto para la wishlist
@@ -54,7 +53,6 @@ export async function manejarWishlist(id) {
             mensajeNotificador.textContent = "Producto agregado a Wishlist";
             mensajeNotificador.style.color = "rgb(8, 231, 38)";
             mensajeNotificador.style.display = "block";
-            // Ocultar el mensaje después de 3 segundos
             setTimeout(() => {
                 mensajeNotificador.style.display = "none";
             }, 3000);
@@ -89,6 +87,7 @@ export function mostrarWishlist() {
                     <p class="precioRegular">$${producto.precio}</p>
                     <p class="precioDescuento">$${producto.precioDescuento}</p>
                 </div>
+                <button class="agregarAlCarrito">Agregar al Carro</button>
                 <button class="eliminar eliminarWishlist">Eliminar</button>
             </div>
         `;
@@ -108,6 +107,48 @@ export function actualizarWishlistContador() {
         contador.style.display = 'none';
     }
 }
+
+// Agregar al carrito y eliminar de wishlist
+document.addEventListener("click", async (e) => {
+    if (e.target.classList.contains("agregarAlCarrito")) {
+        const id = e.target.closest(".cardProducto").dataset.id;
+        const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+        const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+        // Encontramos el producto en la wishlist
+        const producto = wishlist.find((producto) => producto.id == id);
+
+        if (!producto) return;
+
+        // Verificar si ya está en el carrito
+        const productoExistente = carrito.find((item) => item.id == producto.id);
+
+        if (productoExistente) {
+            // Verificamos si hay stock
+            if (productoExistente.cantidad < producto.stock) {
+                productoExistente.cantidad++;
+            } else {
+                alert("No hay suficiente stock disponible.");
+                return;
+            }
+        } else {
+            // Si no está, lo agregamos al carrito
+            const nuevoProducto = { ...producto, cantidad: 1 };
+            carrito.push(nuevoProducto);
+        }
+
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+
+        // Eliminamos el producto de la wishlist
+        const nuevaWishlist = wishlist.filter((item) => item.id != id);
+        localStorage.setItem("wishlist", JSON.stringify(nuevaWishlist));
+
+        // Actualizamos la vista
+        mostrarWishlist();
+        actualizarWishlistContador();
+        alert("Producto agregado al carrito.");
+    }
+});
 
 // Función para eliminar producto de la wishlist
 document.addEventListener('click', (e) => {
