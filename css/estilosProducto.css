@@ -176,6 +176,135 @@
 }
 
 /*Productos Relacionados*/
+.cardProductoRelacionados{
+    display: contents;
+}
+
+/*Tarjeta Productos*/
+.cardProducto{
+    background-color: rgb(233, 232, 232);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 12px grey;
+}
+
+.cardProducto img{
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+
+.cardProducto h3{
+    font-size: 1.2em;
+    padding: 10px 10px;
+}
+
+.cardProducto .productoDescripción{
+    padding: 0px 10px;
+}
+
+.cardProducto .precio{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.cardProducto p.precioDescuento{
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: rgb(8, 231, 38);
+    background-color: black;
+}
+
+.cardProducto p.precioRegular{
+    text-decoration: line-through;
+    color: tomato;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.cardProducto a{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.cardProducto a:hover{
+    background-color: rgb(8, 231, 38);
+    color: rgb(17, 17, 17);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+
+.botones{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.btnCarrito,
+.btnCarritoGaleria {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+}
+
+.btnCarritoGaleria{
+    width: auto;
+}
+
+.btnCarrito:hover,
+.btnCarritoGaleria:hover {
+    background-color: rgb(8, 231, 38);
+    color: black;
+}
+
+.cardProducto .btnWishlist:hover {
+    background-color: black;
+    color: rgb(8, 231, 38);
+}
+
+.cardProducto .btnWishlist {
+    background: none;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.cardProducto .btnWishlist svg {
+    width: 50px; 
+    height: 50px;
+}
+
+.cardProducto .btnWishlist svg:hover,
+.cardProducto .btnWishlist svg path:hover {
+    fill: currentColor;
+    stroke: rgb(8, 231, 38);
+    stroke-width: 3;
+}
+
 .masVendidos{
     padding: 75px 0;
     margin-left: auto;

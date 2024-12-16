@@ -33,10 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
         validarContacto();
     }
 
-    // Página de Producto, , Checkout
-    if(document.body.classList.contains('productos') ||
-       document.body.classList.contains('checkout')){
+    // Página de Producto
+    if(document.body.classList.contains('productos')){
+        mostrarProductos(".cardProductoRelacionados", "Más Vendidos", 4);
         cambiarCantidadProductos();
+        carrito();
     }
 
     // Página de Producto, Carrito, Checkout
